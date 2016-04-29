@@ -1,0 +1,9 @@
+Grep
+====
+
+    grep -iR --exclude=*.bak "pattern" *
+
+* `--include=*.py`
+* `--exclude=*.bak`
+* `-R` recursive
+* `-i` case insensitive
