@@ -26,6 +26,8 @@ E.g. Creating a database suitable for https://www.drupal.org/documentation/insta
 
 == Python-MySQL
 
+ sudo apt-get install python-mysqldb
+
 See http://zetcode.com/db/mysqlpython/[examples]
 ....
 import MySQLdb as mdb
