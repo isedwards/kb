@@ -1,0 +1,55 @@
+== Installation
+
+Installion as part of a standard https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu[LAMP] stack.
+
+....
+sudo apt-get update
+sudo apt-get install apache2
+sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+sudo mysql_install_db
+sudo /usr/bin/mysql_secure_installation
+sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+....
+
+
+== Create database
+
+E.g. Creating a database suitable for https://www.drupal.org/documentation/install/create-database[Drupal]
+
+ mysql -u root -p -e "CREATE DATABASE testdb CHARACTER SET utf8 COLLATE utf8_general_ci";
+ mysql -u root -p
+
+ CREATE USER testuser@localhost IDENTIFIED BY 'testpass';
+ GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES ON testdb.* TO 'testuser'@'localhost' IDENTIFIED BY 'testpass';
+
+ mysql -u root -p testdb < backup.sql
+
+== Python-MySQL
+
+....
+import MySQLdb as mdb
+import sys
+
+try:
+    con = mdb.connect('localhost', 'testuser', 'test623', 'testdb');
+    cur = con.cursor()
+    cur.execute("SELECT VERSION()")
+    ver = cur.fetchone()
+    print "Database version : %s " % ver
+    
+except mdb.Error, e:
+    print "Error %d: %s" % (e.args[0],e.args[1])
+    sys.exit(1)
+    
+finally:    
+    if con:    
+        con.close()
+....
+
+== Direct CSV/Tab delimited output
+
+Output to http://www.tech-recipes.com/rx/1475/save-mysql-query-results-into-a-text-or-csv-file/[text file]
+either as tab delimited
+or as http://stackoverflow.com/questions/12040816/mysqldump-in-csv-format[csv]
+
+ SELECT * FROM users INTO OUTFILE '/tmp/users.txt';
