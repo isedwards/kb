@@ -1,0 +1,23 @@
+= PEP8
+
+== Maximum line length
+
+* 72 characters for docstring and block comments
+* 79 characters for single line comments and code
+
+(Begin comments with a capital letter where approproate, omit full stops for single sentence/single line comments)
+
+Where it would not be sensible to split a line, try to isolate the unsplitable section on a line on its own,
+and add `# noqa` (no quality assurance) to ensure PEP8 tests pass, e.g.
+
+```
+INITIAL_PASS = \
+'pkbef3_sha256$1600$e839FwWInhRB45boewo9zkx8z2aAsCsVBoUNYnoeCefJegeDGEdg23fdw='  # noqa
+```
+
+```
+# A Foolish Consistency is the Hobgoblin of Little Minds [1]
+# [1]: http://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds  # noqa
+```
+
+NOTE: In general - urls don't belong in code (e.g. including links to stackoverflow!)
