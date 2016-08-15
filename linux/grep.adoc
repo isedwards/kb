@@ -1,5 +1,4 @@
-Grep
-====
+= Grep
 
     grep -iR --exclude=*.bak "pattern" *
 
