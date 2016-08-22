@@ -1,0 +1,22 @@
+== Dump and restore
+
+https://www.postgresql.org/docs/9.2/static/app-pgdump.html[pg_dump] can create text SQL or other archive formats.
+
+Using the other archive formats has advantages:
+
+* (potentially) smaller file sizes?
+* can use https://www.postgresql.org/docs/9.2/static/app-pgrestore.html[pg_restore] command
+* regardless of pg_dump options, can change with options like `--clear --no-owner`
+
+Attempting to use pg_restore on text sql gives the following error:
+----
+    $ pg_restore --clean --no-owner --role=new_owner -d db_name db_name.dump
+    pg_restore: [archiver] input file appears to be a text format dump. Please use psql.
+----
+
+Therefore, when using postgres, if we need to:
+
+* change owner information on restore
+* drop objects on restore
+
+without editing the SQL we can consider using the archive formats and pg_restore.
