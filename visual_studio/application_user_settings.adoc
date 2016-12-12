@@ -1,0 +1,11 @@
+= Application settings and User settings
+
+Dot NET projects have a capability for https://msdn.microsoft.com/en-us/library/bb397750(v=vs.110).aspx[persisting settings] (either globally for the application, or by user) across execution sessions.
+
+The https://msdn.microsoft.com/en-us/library/bb397755(v=vs.110).aspx[crucial information] on how to make changes persist is hard to find:
+
+== C#
+Properties.Settings.Default.Save();
+
+== VB.NET
+My.Settings.Save()
