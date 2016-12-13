@@ -9,3 +9,5 @@ Properties.Settings.Default.Save();
 
 == VB.NET
 My.Settings.Save()
+
+Note that information stored is not encrypted and is stored in plain text. https://msdn.microsoft.com/en-us/library/ms171887.aspx[Connection strings stored in application settings] should not contain usernames and passwords, see https://msdn.microsoft.com/en-us/library/89211k9b.aspx[Protecting Connection Information] and also https://msdn.microsoft.com/en-us/library/ms254947.aspx[Connection String Builders].
