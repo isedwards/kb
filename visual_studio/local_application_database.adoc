@@ -9,6 +9,15 @@
 
 Assuming you don't want to add SQLite as a dependency, it looks like http://erikej.blogspot.co.uk/2011/01/comparison-of-sql-server-compact-4-and.html[SQL Server Compact] is the best option.
 
+The relevant DLL will be included in the install, and there are http://stackoverflow.com/a/11242863/1895018[several limitations], including:
+
+* Max 2 GB file size
+* No stored procedures, triggers etc.
+* Database capability does not run as its own process, but is loaded into your AppDomain
+* Lack of concurrent access of multiple users at the same time
+
+None of these are an issue for our use case for a local application database.
+
 Use of a local file-based database allows projects to not have to store information related to the code of the local application in the main database. This allows two installations to share the same main database, but to diverse in their configuration in their local databases; and the main database is kept clean, and only contains actual data.
 
 See the https://msdn.microsoft.com/en-us/library/ms233763(v=vs.110).aspx[walkthrough].
