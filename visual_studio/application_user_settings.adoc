@@ -11,3 +11,5 @@ Properties.Settings.Default.Save();
 My.Settings.Save()
 
 Note that information stored is not encrypted and is stored in plain text. https://msdn.microsoft.com/en-us/library/ms171887.aspx[Connection strings stored in application settings] should not contain usernames and passwords, see https://msdn.microsoft.com/en-us/library/89211k9b.aspx[Protecting Connection Information] and also https://msdn.microsoft.com/en-us/library/ms254947.aspx[Connection String Builders].
+
+See also: https://msdn.microsoft.com/en-us/library/ms254494.aspx#Anchor_2[Encrypting Configuration File Sections Using Protected Configuration] for storing encrypted data in settings files.
