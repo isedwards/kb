@@ -10,3 +10,5 @@
 Assuming you don't want to add SQLite as a dependency, it looks like http://erikej.blogspot.co.uk/2011/01/comparison-of-sql-server-compact-4-and.html[SQL Server Compact] is the best option.
 
 Use of a local file-based database allows projects to not have to store information related to the code of the local application in the main database. This allows two installations to share the same main database, but to diverse in their configuration in their local databases; and the main database is kept clean, and only contains actual data.
+
+See the https://msdn.microsoft.com/en-us/library/ms233763(v=vs.110).aspx[walkthrough].
