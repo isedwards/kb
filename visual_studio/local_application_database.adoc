@@ -11,7 +11,7 @@ Assuming you don't want to add SQLite as a dependency, it looks like http://erik
 
 The relevant DLL will be included in the install, and there are http://stackoverflow.com/a/11242863/1895018[several limitations], including:
 
-* Max 2 GB file size
+* Max 4 GB file size
 * No stored procedures, triggers etc.
 * Database capability does not run as its own process, but is loaded into your AppDomain
 * Lack of concurrent access of multiple users at the same time
