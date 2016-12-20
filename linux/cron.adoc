@@ -1,0 +1,11 @@
+Edit crontab with `crontab -e`
+
+== Errors
+
+*(CRON) info (No MTA installed, discarding output)*
+
+```
+sudo apt-get install postfix
+# rerun cron job
+sudo tail -f /var/mail/<user>
+```
