@@ -8,4 +8,8 @@ Edit crontab with `crontab -e`
 sudo apt-get install postfix
 # rerun cron job
 sudo tail -f /var/mail/<user>
+
+# or, consider installing `mail` with
+sudo apt-get install mailutils
+
 ```
