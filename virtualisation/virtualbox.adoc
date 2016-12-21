@@ -1,3 +1,21 @@
+= Installing on Ubuntu desktop image
+
+Devices > Install Guest Additions
+```
+sudo mount /dev/cdrom /media/cdrom
+sudo apt-get install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r)
+sudo /media/cdrom/VBoxLinuxAdditions.run
+sudo reboot
+```
+
+= Installing on Ubuntu server image
+
+Before the penultimate step of running `VBoxLinuxAdditions.run`, either:
+ 
+ * Install xserver (you can then use a tool like https://sourceforge.net/projects/xming/[Xming] with http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html[PuTTY]): `sudo apt-get install xserver-xorg`
+ * Run the final step without X11 support:
+   `sudo /media/cdrom/VBoxLinuxAdditions.run --nox11`
+
 = Errors
 
 http://superuser.com/a/768845[VT-x/AMD-V hardware acceleration is not available on your system]
