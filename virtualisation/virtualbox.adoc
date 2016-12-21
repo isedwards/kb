@@ -1,5 +1,8 @@
 = Installing on Ubuntu desktop image
 
+* General > Advanced: Shared Clipboard Bidirectional
+* Network > Bridged Adapter
+
 Devices > Install Guest Additions
 ```
 sudo mount /dev/cdrom /media/cdrom
@@ -12,11 +15,12 @@ sudo reboot
 
 Before the penultimate step of running `VBoxLinuxAdditions.run`, either:
  
- * Install xserver (you can then use a tool like https://sourceforge.net/projects/xming/[Xming] with http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html[PuTTY]): `sudo apt-get install xserver-xorg`
+ * Install xserver (you can then use a tool like https://sourceforge.net/projects/xming/[Xming] (XLaunch) with http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html[PuTTY]): `sudo apt-get install xserver-xorg`
  * Run the final step without X11 support:
    `sudo /media/cdrom/VBoxLinuxAdditions.run --nox11`
 
 To copy and paste into the console running in the VirtualBox window you may want to install GPM.
+
 *Update*: Unfortunately the GPM clipboard does not sync with the X11 clipboard, so copy and paste still does not work. One of the solutions here may work: http://superuser.com/questions/451039
 
 
