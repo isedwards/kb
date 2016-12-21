@@ -16,6 +16,9 @@ Before the penultimate step of running `VBoxLinuxAdditions.run`, either:
  * Run the final step without X11 support:
    `sudo /media/cdrom/VBoxLinuxAdditions.run --nox11`
 
+To copy and paste into the console running in the VirtualBox window you may want to install GPM.
+
+
 = Errors
 
 http://superuser.com/a/768845[VT-x/AMD-V hardware acceleration is not available on your system]
