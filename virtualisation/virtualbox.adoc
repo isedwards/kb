@@ -17,6 +17,7 @@ Before the penultimate step of running `VBoxLinuxAdditions.run`, either:
    `sudo /media/cdrom/VBoxLinuxAdditions.run --nox11`
 
 To copy and paste into the console running in the VirtualBox window you may want to install GPM.
+*Update*: Unfortunately the GPM clipboard does not sync with the X11 clipboard, so copy and paste still does not work. One of the solutions here may work: http://superuser.com/questions/451039
 
 
 = Errors
