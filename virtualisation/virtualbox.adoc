@@ -5,15 +5,15 @@
 
 Devices > Install Guest Additions
 ```
-sudo mount /dev/cdrom /media/cdrom
+sudo apt-get update
 sudo apt-get install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r)
+sudo mount /dev/cdrom /media/cdrom
 sudo /media/cdrom/VBoxLinuxAdditions.run
-sudo reboot
 ```
 
 = Installing on Ubuntu server image
 
-Before the penultimate step of running `VBoxLinuxAdditions.run`, either:
+Before the final step of running `VBoxLinuxAdditions.run`, either:
  
  * Install xserver (you can then use a tool like https://sourceforge.net/projects/xming/[Xming] (XLaunch) with http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html[PuTTY]): `sudo apt-get install xserver-xorg`
  * Run the final step without X11 support:
@@ -23,6 +23,13 @@ To copy and paste into the console running in the VirtualBox window you may want
 
 *Update*: Unfortunately the GPM clipboard does not sync with the X11 clipboard, so copy and paste still does not work. One of the solutions here may work: http://superuser.com/questions/451039
 
+= Shared folders
+
+Attempting to access the shared folders will give the error `Permission denied`
+```
+sudo adduser your_username vboxsf
+sudo reboot
+```
 
 = Errors
 
