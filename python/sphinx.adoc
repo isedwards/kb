@@ -6,3 +6,7 @@ pip install -U sphinx
 mkcd docs
 sphinx-quickstart
 ```
+
+= Versioning
+
+Documentation can be manually versioned, or automatically in http://read-the-docs.readthedocs.io/en/latest/versions.html[read the docs] using git tags
