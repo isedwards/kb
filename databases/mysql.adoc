@@ -1,6 +1,7 @@
 == Issues
 
-http://stackoverflow.com/questions/31951468/error-code-1290-the-mysql-server-is-running-with-the-secure-file-priv-option/31983737#31983737[Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement]
+* http://stackoverflow.com/questions/31951468/error-code-1290-the-mysql-server-is-running-with-the-secure-file-priv-option/31983737#31983737[Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement]
+* ERROR 1030 (HY000): Got error 28 from storage engine - disc space issue, either with the main database storage, /tmp, or insufficient space for socket file if transferring data over a network.
 
 == Installation
 
