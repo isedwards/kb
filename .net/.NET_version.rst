@@ -1,0 +1,9 @@
+**.NET Framework 4.5.2:** Support for .NET 4.5.2 follows the support lifecycle policy of the parent operating system. It is supported as a Windows component on the latest required operating system update for Windows Vista SP2, Windows 7 SP1, Windows Server 2008 SP2, Windows Server 2008 R2 SP1, Windows 8.1 Update, Windows Server 2012, and Windows Server 2012 R2.
+
+**.NET Framework 4.6:** Support for .NET 4.6 follows the support lifecycle policy of the parent operating system. It is supported as a Windows component on the latest required operating system update for Windows Vista SP2, Windows 7 SP1, Windows Server 2008 SP2, Windows Server 2008 R2 SP1, Windows 8.1 Update, Windows Server 2012, Windows Server 2012 R2, and Windows 10.
+
+**.NET Framework 4.6.1:** Support for .NET 4.6.1 follows the support lifecycle policy of the parent operating system. It is supported as a Windows component on the latest required operating system update for Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 Update, Windows Server 2012, Windows Server 2012 R2, and Windows 10. Microsoft recommends customers upgrade to .NET Framework 4.6.1 in order to receive the highest level of performance, efficiency, and reliability.
+
+https://support.microsoft.com/en-us/gp/framework_faq/en-us
+
+You can determine the current .NET version by querying the registry: https://blogs.msdn.microsoft.com/dotnet/2015/12/09/support-ending-for-the-net-framework-4-4-5-and-4-5-1/
