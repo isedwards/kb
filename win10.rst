@@ -17,6 +17,7 @@ Currently following `this advice`_:
 * properties 
 * advanced tab
 * 802.11n Channel Width for 2.4GHz selected: Change value from auto to 20 MHz Only
+* (restart)
 
 .. _Tech Preview: http://www.theregister.co.uk/2014/10/07/windows_10_data_collection/
 .. _full list: http://www.howto-connect.com/fix-airplane-mode-issues-in-windows-10/
