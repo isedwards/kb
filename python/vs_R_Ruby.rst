@@ -15,3 +15,5 @@ R
 [2] http://stackoverflow.com/a/14182326/1624894
 
 [3] https://rdrr.io/cran/lubridate/man/today.html
+
+See also: https://www.upguard.com/articles/python-vs-ruby
