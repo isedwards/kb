@@ -8,6 +8,8 @@ Ctrl-left/right    Option-left/right
 
 DEL    Fn-Backspace
 
+Ctrl-X    (Copy, then Option-Command-V)
+
 
 Atom
 ====
