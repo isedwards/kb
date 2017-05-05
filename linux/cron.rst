@@ -5,7 +5,8 @@ Important: the jobs will run as the user who executed `crontab -e`. If you want 
 See info on @reboot
   - https://unix.stackexchange.com/questions/109804/crontabs-reboot-only-works-for-root
 
-== Updates
+Updates
+=======
 On Ubunutu, root receives mail when you should update, e.g. `sudo tail /var/mail/root`
 
 ```
@@ -15,7 +16,8 @@ On Ubunutu, root receives mail when you should update, e.g. `sudo tail /var/mail
     Run 'do-release-upgrade' to upgrade to it.
 ```
 
-== Errors
+Errors
+======
 
 *(CRON) info (No MTA installed, discarding output)*
 
