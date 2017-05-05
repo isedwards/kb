@@ -2,6 +2,9 @@ Edit crontab with `crontab -e`
 
 Important: the jobs will run as the user who executed `crontab -e`. If you want to run jobs as root then you would use `sudo crontab -e`
 
+See info on @reboot
+  - https://unix.stackexchange.com/questions/109804/crontabs-reboot-only-works-for-root
+
 == Updates
 On Ubunutu, root receives mail when you should update, e.g. `sudo tail /var/mail/root`
 
