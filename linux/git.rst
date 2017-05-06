@@ -7,3 +7,7 @@ The `commands below <http://stackoverflow.com/a/10113231/1895018>`_ keep everyth
 
     git fetch origin master
     git merge -s recursive -X theirs origin/master
+
+SQL dumps
+=========
+GitHub advise that git is not a great tool for `SQL dumps <https://help.github.com/articles/what-is-my-disk-quota/#database-dumps>`_.  Where you decide it is appropriate, be sure to use the `--skip-extended-insert` option (`see here <https://www.viget.com/articles/backup-your-database-in-git>`_).
