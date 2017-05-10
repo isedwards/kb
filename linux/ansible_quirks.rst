@@ -1,3 +1,5 @@
+**NOTE: This file only documents gotchas/quicks.**
+
 vars_files:
 ===========
 Ansible (2.1.1.0) currently does not seem to support using a variable input for `var_files`, e.g.
