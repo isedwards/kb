@@ -5,7 +5,7 @@ Default software versions
 |      | Ubuntu 1404 | macOS default | macOS added | Comments                                                 |
 +======+=============+===============+=============+==========================================================+
 | git  | 1.9.1       |       -       | 2.11.0      | Typing git results in option to install as part of Xcode |
-| tmux | 1.8         |		           | 2.3				 | brew install tmux                                        |
+| tmux | 1.8         |               | 2.3         | brew install tmux                                        |
 +------+-------------+---------------+-------------+----------------------------------------------------------+
 
 
