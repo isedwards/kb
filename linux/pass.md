@@ -1,3 +1,5 @@
+# Getting set up
+
 1. First [create a GPG2 key](https://fedoraproject.org/wiki/Creating_GPG_Keys)
 
     `$ gpg2 --full-gen-key`
@@ -29,3 +31,8 @@ Make a note of the ID it returns when it reports: `You selected this USER-ID:`.
     ```
 
 See more [here](https://git.zx2c4.com/password-store/about/)
+
+
+# Distributed password store using git
+
+Write up using on multiple machines, sharing the git repo and looking after your private key if transfering on a memory stick.
