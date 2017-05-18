@@ -16,3 +16,4 @@ Kitchen
 
 (20 teeth)
 
+`Q445K valve <https://www.tapmagician.co.uk/TMDefault.aspx?110?Q445K>`_
