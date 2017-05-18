@@ -1,4 +1,4 @@
-1. First create a GPG2 key
+1. First [create a GPG2 key](https://fedoraproject.org/wiki/Creating_GPG_Keys)
 
     `$ gpg2 --full-gen-key`
 
@@ -6,7 +6,7 @@ Make a note of the ID it returns when it reports: `You selected this USER-ID:`.
 
 (Files are created in ~/.gnupg)
 
-2. Create the password store
+2. [Create the password store](https://www.passwordstore.org)
 
     ```
     $ pass init "GPG Key ID"
@@ -27,3 +27,5 @@ Make a note of the ID it returns when it reports: `You selected this USER-ID:`.
     Q2: Question? Answer
     ... (e.g. PIN:)
     ```
+
+See more [here](https://git.zx2c4.com/password-store/about/)
