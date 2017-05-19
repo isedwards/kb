@@ -18,4 +18,4 @@ Kitchen
 
 `Q445K valve <https://www.tapmagician.co.uk/TMDefault.aspx?110?Q445K>`_
 
-Due to the design, the hot cartridge (clockwise turn on) is used in the cold tap and visa versa.
+Due to the design, the hot cartridge (clockwise turn on) is used in the cold tap and vice versa.
