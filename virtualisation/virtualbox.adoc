@@ -1,13 +1,38 @@
-= Cannot create symbolic links in shared folder
-
-"The host operating system must support symlinks (i.e. a Mac, Linux or Solaris host is required)"
-
-For possible workarounds see: https://github.com/mitchellh/vagrant/issues/713
-
-= Installing on Ubuntu desktop image
+= Setup
 
 * General > Advanced: Shared Clipboard Bidirectional
-* Network > Bridged Adapter
+
+==== VirtualBox preferences
+- Network: Host-only Networks - "vboxnet0" or "VirtualBox Host-Only Ethernet Adapter"
+  - IPv4 Address: 192.168.56.1
+  - IPv4 Network Mask: 255.255.255.0
+  - DHCP Server: Disabled
+
+==== Virtual machine settings - Network
+- Adapter 1: NAT
+- Adapter 2: Host-only Adapter (vboxnet0)
+
+==== Operating System setup
+When installing Ubunut 16.04 it asks which is the primary network interface: enp0s3 or enp0s8. Note that it not longer uses eth0, eth1 etc. Select enp0s3 as the primary interface, and use enp0s8 to set up the static IP address below
+- Configure temporary static IP address (don't use): `ifconfig enp0s8 192.168.56.101 netmask 255.255.255.0 up`
+- Permanent config for static IP address:
+```
+# The host-only network interface
+auto enp0s8
+iface enp0s8 inet static
+address 192.168.56.101
+netmask 255.255.255.0
+network 192.168.56.0
+broadcast 192.168.56.255
+```
+
+==== Setup hosts file (/etc/hosts) - on host!
+```
+192.168.56.101    myserver1
+192.168.56.102    myserver2
+```
+
+==== Guest Additions
 
 Devices > Install Guest Additions
 ```
@@ -15,12 +40,10 @@ sudo apt-get update
 sudo apt-get install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r)
 sudo mount /dev/cdrom /media/cdrom
 sudo /media/cdrom/VBoxLinuxAdditions.run
+
 ```
+If you are installing a server image, before the final step of running `VBoxLinuxAdditions.run`, either:
 
-= Installing on Ubuntu server image
-
-Before the final step of running `VBoxLinuxAdditions.run`, either:
- 
  * Install xserver (you can then use a tool like https://sourceforge.net/projects/xming/[Xming] (XLaunch) with http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html[PuTTY]): `sudo apt-get install xserver-xorg`
  * Run the final step without X11 support:
    `sudo /media/cdrom/VBoxLinuxAdditions.run --nox11`
@@ -37,6 +60,13 @@ sudo adduser your_username vboxsf
 sudo reboot
 ```
 
+==== Cannot create symbolic links in shared folder
+
+"The host operating system must support symlinks (i.e. a Mac, Linux or Solaris host is required)"
+
+For possible workarounds see: https://github.com/mitchellh/vagrant/issues/713
+
+
 = Errors
 
 http://superuser.com/a/768845[VT-x/AMD-V hardware acceleration is not available on your system]
@@ -46,7 +76,7 @@ VT-x/AMD-V support gets disabled for VirtualBox if you have Hyper-V installed. D
 `dism.exe /Online /Disable-Feature:Microsoft-Hyper-V`
 
 
-= Networking
+= Networking (futher notes)
 
 When creating a virtual machine, the network adapter used seems to correspond to whether you are using Wi-fi or cable at that time. If you later switch then you can get network errors at boot time and have to manually reconfigure network settings. Also, if you setup VMs on your laptop and then connect to a different network you don't necessarily want them to be visible on the network.
 
