@@ -1,3 +1,5 @@
+    psql --list
+
 == Dump and restore
 
 https://www.postgresql.org/docs/9.2/static/app-pgdump.html[pg_dump] can create text SQL or other archive formats.
