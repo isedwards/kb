@@ -14,8 +14,10 @@
 
 ==== Operating System setup
 When installing Ubunut 16.04 it asks which is the primary network interface: enp0s3 or enp0s8. Note that it not longer uses eth0, eth1 etc. Select enp0s3 as the primary interface, and use enp0s8 to set up the static IP address below
+
 - Configure temporary static IP address (don't use): `ifconfig enp0s8 192.168.56.101 netmask 255.255.255.0 up`
-- Permanent config for static IP address:
+- Permanent config for static IP address (/etc/network/interfaces)
+
 ```
 # The host-only network interface
 auto enp0s8
