@@ -2,6 +2,9 @@
 
 Sadly, virtualbox is likely to decline to to lack of https://developers.slashdot.org/story/15/01/30/1530245/virtualbox-development-at-a-standstill[investment by Oracle]. It may soon be time to jump ship and consider investing in VMWare or Parallels. https://www.vagrantup.com/vmware/index.html[Vagrant recommend VMWare]
 
+= Symlinks
+
+Trying to create a symlink in linux on a mounted windows drive fails with an error message saying that the location is read-only. However, Windows 7+ https://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/[supports symlinks] - if you instead create them in windows using a command prompt with elevated privileges and use the `mklink` command.
 
 = Setup
 
