@@ -6,6 +6,10 @@ Sadly, virtualbox is likely to decline due to lack of https://developers.slashdo
 
 Trying to create a symlink in linux on a mounted windows drive fails with an error message saying that the location is read-only. However, Windows 7+ https://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/[supports symlinks] - if you instead create them in windows using a command prompt with elevated privileges and use the `mklink /D` command (does this work - I seem to be having trouble with recursive links: `ls: cannot open directory .: Too many levels of symbolic links`)
 
+= Vagrant
+
+https://superuser.com/a/588334/638595[Arguments for vagrant], but in general I use VirtualBox snapshots and ansible as I don't need to bring up whole networks of new VMs all at once.
+
 = Setup
 
 * General > Advanced: Shared Clipboard Bidirectional
