@@ -20,4 +20,4 @@ INITIAL_PASS = \
 # [1]: http://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds  # noqa
 ```
 
-NOTE: In general - urls don't belong in code (e.g. including links to stackoverflow!)
+NOTE: In general - urls don't belong in code (e.g. including links to stackoverflow!), the exception being valid links in inline docs
