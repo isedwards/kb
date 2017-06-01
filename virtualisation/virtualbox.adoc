@@ -4,7 +4,7 @@ Sadly, virtualbox is likely to decline to to lack of https://developers.slashdot
 
 = Symlinks
 
-Trying to create a symlink in linux on a mounted windows drive fails with an error message saying that the location is read-only. However, Windows 7+ https://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/[supports symlinks] - if you instead create them in windows using a command prompt with elevated privileges and use the `mklink` command.
+Trying to create a symlink in linux on a mounted windows drive fails with an error message saying that the location is read-only. However, Windows 7+ https://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/[supports symlinks] - if you instead create them in windows using a command prompt with elevated privileges and use the `mklink -D` command.
 
 = Setup
 
