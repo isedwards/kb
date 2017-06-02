@@ -1,18 +1,22 @@
+## Still using Windows?
+
 Windows 10 is a different animal to previous releases with Microsoft undertaking more monitoring than ever before, especially in the `Tech Preview`_.
 
 If linux is not already your primary OS, perhaps now is the time, it's free and I can honestly say it is better designed than Windows or MacOS.
 
 ---
 
-Windows 10 Creators Update
+## Windows 10 Creators Update
 
-A mandatory update that eats up disc space and installs some 3D paint package that I'm never going to use. It broke two things on my machine - firstly VirtualBox (vital for almost all of my work), fortunately upgrading from 5.16 to 5.1.22 fixed this with no new issues arising.
+A mandatory update that eats up disc space and installs some 3D paint package that I'm never going to use. It broke two things on my Windows machine - firstly VirtualBox (vital for almost all of my development work), fortunately upgrading from 5.16 to 5.1.22 fixed this with no new issues arising.
 
 Secondly, the update silently enable Hyper-V (which I've had to disable manually in the past), it makes my computer clock slow down - not only to a lose time, but everything on the machine runs like a snail (e.g. when booting up, the spinning progress bar crawls). I disabled hyper-v again with `bcdedit /set hypervisorlaunchtype off` at an elevated command prompt.
 
 Unfortunately a few months ago, I disposed of a monitor thinking that this was slowing the clock down as if seemed correlated with when I had the device connected.
 
 ---
+
+## Wifi
 
 For some odd reason, Windows 10 switches my wi-fi on and off all day long (even when not on battery...)
 
