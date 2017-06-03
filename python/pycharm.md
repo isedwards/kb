@@ -11,6 +11,8 @@ The [professional edition](https://www.jetbrains.com/pycharm/features/editions_c
 #### Keymap
 I've changed from `Default` to `Eclipse` just to avoid Ctrl-y being mapped to yank (which deleted a line and loses your redo history). Now Ctrl-y is mapped to redo.
 
+With the IdeaVim plugin you can also switch vim emulation on and off, returning to you base keymap when emulation is off.
+
 #### Editor > General
 **Other**
 * Strip trailing spaces on Save: All
