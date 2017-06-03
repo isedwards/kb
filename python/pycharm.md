@@ -8,6 +8,9 @@ The [professional edition](https://www.jetbrains.com/pycharm/features/editions_c
 
 ## Settings
 
+#### Keymap
+I've changed from `Default` to `Eclipse` just to avoid Ctrl-y being mapped to yank (which deleted a line and loses your redo history). Now Ctrl-y is mapped to redo.
+
 #### Editor > General
 **Other**
 * Strip trailing spaces on Save: All
