@@ -1,4 +1,4 @@
-= Tmux
+### Tmux
 
 * [tmux cheetsheet](http://www.dayid.org/comp/tm.html)
 * tmux freezes then you press <kbd>ctrl</kbd><kbd>s</kbd>, you can unfreeze with <kbd>ctrl</kbd><kbd>q</kbd>
