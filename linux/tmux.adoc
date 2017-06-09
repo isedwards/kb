@@ -1,5 +1,0 @@
-= Tmux
-
-* [tmux cheetsheet](http://www.dayid.org/comp/tm.html)
-* <kbd>ctrl-b</kbd> <kbd>&</kbd> to destroy a stuck window
-* [Simple tmux configuration](http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/)
