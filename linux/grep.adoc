@@ -6,3 +6,5 @@
 * `--exclude=*.bak`
 * `-R` recursive
 * `-i` case insensitive
+* `-I` ignore binary files
+* `-n` prefix each line of output with the 1-based line number within its input file
