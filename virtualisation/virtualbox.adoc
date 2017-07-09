@@ -92,6 +92,8 @@ VT-x/AMD-V support gets disabled for VirtualBox if you have Hyper-V installed. D
 
 = Networking (futher notes)
 
+`sudo apt-get install openssh-server`
+
 When creating a virtual machine, the network adapter used seems to correspond to whether you are using Wi-fi or cable at that time. If you later switch then you can get network errors at boot time and have to manually reconfigure network settings. Also, if you setup VMs on your laptop and then connect to a different network you don't necessarily want them to be visible on the network.
 
 **Solution:** http://christophermaier.name/2010/09/01/host-only-networking-with-virtualbox/
