@@ -1,3 +1,8 @@
+Adding executable bit
+=====================
+To add +x to a file that is store on a windows filesystem, use:
+` git update-index --chmod=+x filename`(often used to make django's manage.py executable)
+
 Forcing Git pull to overwrite local files
 =========================================
 
