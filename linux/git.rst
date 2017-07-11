@@ -1,3 +1,12 @@
+Updating .gitignore
+===================
+After updating .gitignore you may still have files in the repository that should now be ignored.  Fix this by removing and re-adding the files thus:
+
+.. code::
+
+    git rm -r --cached .
+    git add .
+
 Adding executable bit
 =====================
 To add +x to a file that is store on a windows filesystem, use:
