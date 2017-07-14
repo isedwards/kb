@@ -1,4 +1,4 @@
-By default, mysql 127.0.0.1 is https://serverfault.com/a/259917[actually connecting over a socket], rather than through the network address. Add `-h 127.0.0.1` to force communication over TCP.```
+By default, `mysql 127.0.0.1` is https://serverfault.com/a/259917[actually connecting over a socket], rather than through the network address. Add `-h 127.0.0.1` to force communication over TCP.
 
 == Issues
 
