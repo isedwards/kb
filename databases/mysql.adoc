@@ -1,3 +1,5 @@
+By default, mysql 127.0.0.1 is https://serverfault.com/a/259917[actually connecting over a socket], rather than through the network address. Add `-h 127.0.0.1` to force communication over TCP.```
+
 == Issues
 
 * http://stackoverflow.com/questions/31951468/error-code-1290-the-mysql-server-is-running-with-the-secure-file-priv-option/31983737#31983737[Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement]
