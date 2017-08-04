@@ -27,6 +27,6 @@
     `./manage.py collectstatic`
 
 
-If you cannot get the debug toolbar to show then you can force it by adding the following to settings:
+If you cannot get the debug toolbar to show then you can [force it](https://stackoverflow.com/questions/10517765/django-debug-toolbar-not-showing-up) by adding the following to settings:
 
     `DEBUG_TOOLBAR_CONFIG = { 'SHOW_TOOLBAR_CALLBACK': lambda x: True }`
