@@ -1,0 +1,1 @@
+- [Track pad right click](https://discussions.apple.com/thread/5586652)
