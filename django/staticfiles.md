@@ -2,6 +2,8 @@ Handling static and media files
 ===============================
 **THIS DOCUMENT IS NOT YET COMPLETE**
 
+[Basic docs](https://stackoverflow.com/a/40330875/), [more advanced docs](https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/).
+
 - See also: [summary](https://stackoverflow.com/a/6418281/)
 - TODO: Consider paths for serving private static files (see [XSendfile](https://github.com/isedwards/kb/blob/master/web_servers/XSendfile_(X-Accel-Redirect).md))
 
