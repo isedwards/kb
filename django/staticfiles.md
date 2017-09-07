@@ -5,7 +5,7 @@ Handling static and media files
 - See also: [summary](https://stackoverflow.com/a/6418281/)
 - TODO: Consider paths for serving private static files (see [XSendfile](https://github.com/isedwards/kb/blob/master/web_servers/XSendfile_(X-Accel-Redirect).md))
 
-    The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
+`The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting` - this is because collectstatic collects the files into `STATIC_ROOT` and then NGiИX serves these. `STATIC_ROOT` appears to only be used by collectstatic, the setting [is not used in production](https://stackoverflow.com/a/40330875/)
 
 Conventions
 -----------
