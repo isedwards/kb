@@ -6,6 +6,10 @@ The [professional edition](https://www.jetbrains.com/pycharm/features/editions_c
 * Web development with JavaScript, TypeScript, HTML/CSS
 * Database, SQL and UML/SQLAlchemy Diagrams (not used yet)
 
+## Short cuts
+* Alt-1, Alt-7
+* Shift-Alt-z: surround with. Quickly add something around the current line, or current selection, like an if statement of a try/except.
+
 ## Settings
 
 #### Keymap
