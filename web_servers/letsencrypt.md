@@ -11,3 +11,5 @@ Add only the http nginx config and let certbot update the bottom of the config f
     sudo apt-get install python-certbot-nginx 
 
     sudo certbot --nginx  # follow online prompts
+
+These days, certbot automatically adds a cron entry: `/etc/cron.d/certbot`
