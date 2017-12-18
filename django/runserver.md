@@ -1,7 +1,8 @@
 ### Request output
 
 If runserver no longer shows the requests being made on stdout,
-it's likely because of your production `LOGGING` settings in settings.py
+it's likely because your production `LOGGING` settings in settings.py
+no longer have `console` as an [option for logging](https://stackoverflow.com/a/23818289/1624894).
 
 ### Ctrl-c
 
