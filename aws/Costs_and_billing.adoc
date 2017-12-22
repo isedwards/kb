@@ -1,3 +1,7 @@
 = Reserved Instances
 
 http://serverfault.com/a/759616[Reserved instances are just a billing feature]. If you have paid for reserved instances then you are billed less for the equivalent EC2 instances that you are running.
+
+A `standard` RI fixes instance type family (like T2), a reservation plan (all upfront, partial upfront, no upfront), operating system (Linux), and tenancy (like shared), but you can modify the instance type to make it large (e.g. t2-micro to t2.large).  You can even merge two small RIs to a large one.
+
+A `convertible` RI also alows you to chance instance type family.
