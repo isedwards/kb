@@ -1,5 +1,9 @@
     psql --list
 
+== Backing up
+
+https://www.digitalocean.com/community/tutorials/how-to-backup-postgresql-databases-on-an-ubuntu-vps
+
 == Dump and restore
 
 https://www.postgresql.org/docs/9.2/static/app-pgdump.html[pg_dump] can create text SQL or other archive formats.
