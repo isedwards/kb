@@ -1,3 +1,5 @@
+Convert C++ code to VB using services like: http://converter.telerik.com/
+
 You couldn't make this up if you tried...
 
 Default shortcuts:
