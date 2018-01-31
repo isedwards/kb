@@ -1,6 +1,13 @@
 Convert C++ code to VB using services like: http://converter.telerik.com/
 
-You couldn't make this up if you tried...
+Block comments
+--------------
+
+* <kbd>Ctrl + K, C</kbd> to comment
+* <kbd>Ctrl + K, U</kbd> to uncomment
+
+Undo
+----
 
 Default shortcuts:
 
