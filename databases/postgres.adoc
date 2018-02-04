@@ -1,4 +1,10 @@
+== List databases and owners
+
     psql --list
+
+or (from within psql)
+
+    /l
 
 == Backing up
 
