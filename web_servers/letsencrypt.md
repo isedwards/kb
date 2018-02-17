@@ -13,3 +13,5 @@ Add only the http nginx config and let certbot update the bottom of the config f
     sudo certbot --nginx  # follow online prompts
 
 These days, certbot automatically adds a cron entry: `/etc/cron.d/certbot`
+
+HTTP has to be enabled for certbot to confirm ownership of the domain.  During the setup you can choose to redirect all http requests to https.
