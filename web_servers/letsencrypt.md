@@ -12,6 +12,16 @@ Add only the http nginx config and let certbot update the bottom of the config f
 
     sudo certbot --nginx  # follow online prompts
 
-These days, certbot automatically adds a cron entry: `/etc/cron.d/certbot`
-
 HTTP has to be enabled for certbot to confirm ownership of the domain.  During the setup you can choose to redirect all http requests to https.
+
+IMPORTANT NOTES:
+ - Your certificate and chain will be saved at:
+   /etc/letsencrypt/live/sub.domain.com/fullchain.pem
+   Your key file will been saved at:
+   /etc/letsencrypt/live/sub.domain.com/privkey.pem
+- The expirary date for the certificate will be given. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot again
+   with the "certonly" option. To non-interactively renew *all* of
+   your certificates, run "certbot renew"
+
+**These days, certbot automatically adds a cron entry: `/etc/cron.d/certbot`**
