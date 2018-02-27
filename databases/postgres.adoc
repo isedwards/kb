@@ -1,3 +1,5 @@
+- [Find duplicate records](https://stackoverflow.com/questions/28156795/how-to-find-duplicate-records-in-postgresql)
+
 == List databases and owners
 
     psql --list
