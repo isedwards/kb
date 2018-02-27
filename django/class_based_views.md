@@ -4,4 +4,4 @@
     
 - See https://ccbv.co.uk/
 
-- In class based views, I almost always customise the dispatch method. Beware, if you do this, that your custom code, that occurs before super().dispatch(), is NOT covered by any decorators, exception handling etc that is on the parent(s).
+- In class based views, I almost always customise the dispatch method. Beware, if you do this, that your custom code, that occurs before super().dispatch(), is NOT covered by any decorators, exception handling etc that is on the parent(s). See [discussion](https://stackoverflow.com/questions/27824181/django-a-class-based-view-with-mixins-and-dispatch-method)
