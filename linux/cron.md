@@ -1,5 +1,7 @@
 Debug cron using a simple job that [runs every minute](https://askubuntu.com/a/23438/)
 
+    * * * * * /bin/bash -c "whoami > /tmp/who"
+
 Edit crontab with `crontab -e`
 
 Important: the jobs will run as the user who executed `crontab -e`. If you want to run jobs as root then you would use `sudo crontab -e`
