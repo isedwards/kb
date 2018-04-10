@@ -1,0 +1,1 @@
+- [Icons](https://www.heidisql.com/forum.php?t=988) (no tooltips)
