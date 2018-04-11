@@ -11,7 +11,7 @@ If you get an error message like the following in your `logs/django_site.log`:
       </Error>
     </ErrorResponse>
 
-Setup the AWS [time sync service](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html) (see "To configure your Ubuntu or Debian derivative instance to use the Amazon Time Sync Service"). E.g. `sudo apt install chrony` and don't forget to `sudo reboot`.
+Setup the AWS [time sync service](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html) (see "To configure your Ubuntu or Debian derivative instance to use the Amazon Time Sync Service"). E.g. `sudo apt install chrony` ([chrony](https://chrony.tuxfamily.org)) and don't forget to `sudo reboot`.
 
 On our webapps systems, the legacy way to send email using SES is along the lines of:
 
