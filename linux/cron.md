@@ -1,3 +1,11 @@
+Ansible
+=======
+
+See also the cronvar module (summarised [here](https://infinitypp.com/ansible/how-to-manage-cron-commands-jobs-in-ansible/))
+
+Debugging cron
+==============
+
 Debug cron using a simple job that [runs every minute](https://askubuntu.com/a/23438/)
 
     * * * * * /bin/bash -c "whoami > /tmp/who"
