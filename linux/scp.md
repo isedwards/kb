@@ -1,6 +1,6 @@
     scp hostA:path/file hostB:path/file
 
-You need to specify a host which `hostA` can reach because the copy is made from `hostA` directly to `hostB`.
+[You need to specify](https://superuser.com/a/421302) a `hostB` that `hostA` can reach because the copy is made from `hostA` directly to `hostB`.
 
 To avoid this you can use the -3 option. `man scp` says what it does:
 
