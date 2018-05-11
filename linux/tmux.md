@@ -1,6 +1,7 @@
 ### Tmux
 
-* Create new session from within tmux: `:new` (use <kbd>Ctrl</kbd><kbd>b</kbd>+<kbd>$</kbd> to rename)
+* Create new session from within tmux: `:new` (use <kbd>Ctrl</kbd><kbd>b</kbd>+<kbd>$</kbd> to rename, and <kbd>s</kbd> to list)
+* Create new window <kbd>Ctrl</kbd><kbd>b</kbd>+<kbd>c</kbd> (use <kbd>Ctrl</kbd><kbd>b</kbd>+<kbd>,</kbd> to rename, and <kbd>w</kbd> to list)
 * [tmux cheetsheet](http://www.dayid.org/comp/tm.html)
 * tmux freezes then you press <kbd>ctrl</kbd><kbd>s</kbd>, you can unfreeze with <kbd>ctrl</kbd><kbd>q</kbd>
 * <kbd>ctrl</kbd><kbd>b</kbd> + <kbd>&</kbd> to destroy a stuck window
