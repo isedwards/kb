@@ -1,1 +1,2 @@
 - See [Deprecate auto_now and auto_now_add and document alternatives](https://code.djangoproject.com/ticket/22995)
+- Further history and discussion on [SO](https://stackoverflow.com/questions/1737017/django-auto-now-and-auto-now-add)
