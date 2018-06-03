@@ -1,0 +1,1 @@
+- See [Deprecate auto_now and auto_now_add and document alternatives](https://code.djangoproject.com/ticket/22995)
