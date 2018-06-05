@@ -1,0 +1,3 @@
+- [Making Your Django App GDPR Compliant](https://in.pycon.org/cfp/2017/proposals/making-your-django-app-gdpr-compliant~eg8Da/)
+- [Cookies](https://www.itgovernance.eu/blog/en/how-the-gdpr-affects-cookie-policies)
+- Data processors: [changes to the db](https://dzone.com/articles/5-ways-to-make-your-database-gdpr-compliant)
