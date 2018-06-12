@@ -6,6 +6,13 @@ If linux is not already your primary OS, perhaps now is the time, it's free and 
 
 ---
 
+## Multiple desktops
+
+- <kbd>Windows Key</kbd> + <kbd>Tab</kbd>
+- <kbd>Windows Key</kbd> + <kbd>Ctrl</kbd> + <kbd>Left</kbd> / <kbd>Right</kbd>
+
+---
+
 ## Windows 10 Creators Update
 
 A mandatory update that eats up disc space and installs some 3D paint package that I'm never going to use. It broke two things on my Windows machine - firstly VirtualBox (vital for almost all of my development work), fortunately upgrading from 5.16 to 5.1.22 fixed this with no new issues arising.
