@@ -2,7 +2,7 @@ By default, `mysql 127.0.0.1` is [actually connecting over a socket](https://ser
 
 == Key
 
-From [the `CREATE TABLE` manual entry](http://dev.mysql.com/doc/refman/5.1/en/create-table.html):
+From the `CREATE TABLE` [manual entry](http://dev.mysql.com/doc/refman/5.1/en/create-table.html):
 
 > `KEY` is normally a synonym for `INDEX`. The key attribute `PRIMARY KEY` can
 > also be specified as just `KEY` when given in a column definition. This was
