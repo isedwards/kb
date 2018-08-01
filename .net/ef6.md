@@ -28,4 +28,9 @@ to genereate an .edmx file. Currently, the wizard fails in multiple places on VS
 See [workaround]().
 
 You can use the [Update Model Wizard](https://msdn.microsoft.com/en-us/library/cc716705(v=vs.110).aspx)
-after changes are made to the underlying database (right-click the .edmx file and select Update Model from Database)
+after changes are made to the underlying database (right-click the .edmx file and select Update Model from Database), but to avoid problems I tend to delete the old model, remove any related connection strings from `App.config` and then create the model anew.
+
+### Dynamic connection strings
+
+This [link](https://github.com/opencdms/Climsoft/commit/cc7dd606a6f59918ac7517fee91537685e1e4dcd) gives a (poor) example of altering the model to use a connection string dynamically (it works, but the model code is auto-generated, so the changes should not be made where they are).
+
