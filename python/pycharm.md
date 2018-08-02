@@ -7,7 +7,7 @@ The [professional edition](https://www.jetbrains.com/pycharm/features/editions_c
 * Database, SQL and UML/SQLAlchemy Diagrams (not used yet)
 
 ## Short cuts
-- Ctrl+Shift+F7 - [Highlight usages in file](https://www.jetbrains.com/help/pycharm/highlighting-usages.html)
+- Ctrl+Shift+F7 - [Highlight usages in file](https://www.jetbrains.com/help/pycharm/highlighting-usages.html) - the symbol stays highlighted until you press escape :D
 - Ctrl+Shift+Alt+L - Apply PEP8 formating to current file
 * Ctrl-Shift-Up/Down - Move to next method
 * Alt-1, Alt-7
