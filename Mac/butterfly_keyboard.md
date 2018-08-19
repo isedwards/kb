@@ -1,1 +1,2 @@
 - Clean keyboard with [compressed air](https://www.cnet.com/how-to/stuck-key-learn-the-right-way-to-clean-your-macbooks-keyboard/)
+- Problems with butterfly keyboards are now being serviced [for free](https://www.apple.com/support/keyboard-service-program-for-macbook-and-macbook-pro/)
