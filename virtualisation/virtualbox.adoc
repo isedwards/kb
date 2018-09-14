@@ -85,7 +85,7 @@ For possible workarounds see: https://github.com/mitchellh/vagrant/issues/713
 
 http://superuser.com/a/768845[VT-x/AMD-V hardware acceleration is not available on your system]
 
-VT-x/AMD-V support gets disabled for VirtualBox if you have Hyper-V installed. Disable Hyper-V from an elevated command prompt by typing:
+VT-x/AMD-V support gets disabled for VirtualBox if you have Hyper-V installed. In the past Hyper-V has been enabled by Windows updates. Disable Hyper-V from an elevated command prompt by typing:
 
 `dism.exe /Online /Disable-Feature:Microsoft-Hyper-V`
 
