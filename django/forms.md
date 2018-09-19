@@ -16,3 +16,5 @@ If you have an unbounded form (with no data) then unfortunately you cannot add a
 This is because the `add_error` method tries to remove the data from the forms `cleaned_data` (which does not exist), and even if you add the error manually (to form['field_name']._errors) this doesn't get passed to `form.field_name.errors` when it is rendered in the template?
 
 Prehaps, instead, you can create the invalid empty form you want by making it a bound form and passing in an empty request.POST...
+
+[Changing a bound form's data](https://stackoverflow.com/questions/8241001/how-do-i-modify-the-bound-value-for-a-field-in-a-bound-form-in-django#comment59845355_8241241) (request.POST is immutable, so the bound form's data is immutable. Use request.POST.copy())
