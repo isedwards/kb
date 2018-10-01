@@ -15,6 +15,7 @@ For debugging purposes it can be useful to list the hidden fields in the console
     $('[type=hidden]').each(function(num, elem) {
        console.log(elem);
        elem.type = 'text';
+       $(elem).before('<br/><label>' + elem.name + '</label>: ');
     });
     
 ```
@@ -26,7 +27,9 @@ A submit button `<input type="submit" name="submitform"/>` could be changed to a
 `document.getElementsByName("submitform")[0].type = "button";` or `$("input[name='submitform']").prop("type", "button");`
 
 
-## [jQuery custom events](https://www.sitepoint.com/jquery-custom-events/)
+## jQuery custom events
+
+[jQuery custom events](https://www.sitepoint.com/jquery-custom-events/):
 
     $('#my_id').click(function() {
         $.event.trigger({
