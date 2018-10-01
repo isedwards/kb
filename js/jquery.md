@@ -19,6 +19,13 @@ For debugging purposes it can be useful to list the hidden fields in the console
     
 ```
 
+## Change `submit` to `button`
+
+A submit button `<input type="submit" name="submitform"/>` could be changed to a standard button using:
+
+`document.getElementsByName("submitform")[0].type = "button";` or `$("input[name='submitform']").prop("type", "button");`
+
+
 ## [jQuery custom events](https://www.sitepoint.com/jquery-custom-events/)
 
     $('#my_id').click(function() {
