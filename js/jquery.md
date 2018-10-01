@@ -20,6 +20,17 @@ For debugging purposes it can be useful to list the hidden fields in the console
     
 ```
 
+## Add tooltips to show information for form input fields
+
+Give all input elements a tooltip that shows the field's id and name when you hover over them.
+
+```
+    $(':input').each(function(num, elem) {
+       elem.title = '[id]: ' + elem.id + ',  [name]: ' + elem.name;
+    });
+
+```
+
 ## Change `submit` to `button`
 
 A submit button `<input type="submit" name="submitform"/>` could be changed to a standard button using:
