@@ -5,3 +5,5 @@ This page above [links through](http://stackoverflow.com/questions/7296642/djang
 But "django X-Accel-Redirect" looks like a [better search term](https://www.ecosia.org/search?q=django+X-Accel-Redirect).
 
 TLDR; See [this explanation and worked through example](https://wellfire.co/learn/nginx-django-x-accel-redirects/).
+
+If the downlaod is always a 0 kb html file then it's likely you're downloading just the django response (headers) and the redirect to NGINX is not working correctly to serve the file.
