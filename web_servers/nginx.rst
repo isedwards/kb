@@ -1,3 +1,5 @@
+## Test
+
 NGINX's configtest (and when restarting the server) give no information:
 
 .. code::
@@ -6,3 +8,7 @@ NGINX's configtest (and when restarting the server) give no information:
     * Testing nginx configuration                                           [fail]
  
 Instead use: ``$ sudo nginx -t``
+
+## Root vs Alias
+
+See: https://stackoverflow.com/a/10647080/
