@@ -1,5 +1,7 @@
 ## Restart
 
+[service vs systemctl vs supervisorctl](https://askubuntu.com/a/903405)
+
 - `nginx -s reload`
 - `/etc/init.d/nginx restart`
 - `/etc/init.d/nginx reload`
