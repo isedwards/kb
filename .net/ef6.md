@@ -5,6 +5,9 @@ The actual EF Homepage (as listed on [Wikipedia](https://en.wikipedia.org/wiki/E
 http://msdn.microsoft.com/en-us/data/ef.aspx (also appears to be accessible via a
 [different url](https://msdn.microsoft.com/en-us/library/aa937723%28v=vs.113%29.aspx)).
 
+### Unresolved
+Composite keys may be supported on MS SQL Server but resulted in errors when used with MySQL (the SQL that was automatically generated in these circumstances was quite odd and not supported by MySQL).
+
 ### EF6 vs EF Core
 EF6 is still being developed/released, but MS are also starting from scratch writing the open source EF Core
 (which will also run on Linux and Mac). EF Core is incomplete and not tried and tested...
