@@ -1,0 +1,1 @@
+- [Options for keeping links below 80 characters](http://www.rubycoloredglasses.com/2017/11/markdown-links-80-character-line-length/)
