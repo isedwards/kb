@@ -1,4 +1,0 @@
-Vim
-===
-
-* kbd:[ctrl-q] to unstick a locked screen (caused by pressing kbd:[ctrl-s])
