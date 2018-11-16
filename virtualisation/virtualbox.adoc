@@ -1,6 +1,6 @@
 = Future
-V
-irtualbox may decline due to lack of https://developers.slashdot.org/story/15/01/30/1530245/virtualbox-development-at-a-standstill[investment by Oracle]. It may soon be time to jump ship and consider investing in VMWare Workstation (PC), VMWare Fusion (mac) or Parallels (mac). https://www.vagrantup.com/vmware/index.html[Vagrant recommend VMWare]
+
+Virtualbox may decline due to lack of https://developers.slashdot.org/story/15/01/30/1530245/virtualbox-development-at-a-standstill[investment by Oracle]. It may soon be time to jump ship and consider investing in VMWare Workstation (PC), VMWare Fusion (mac) or Parallels (mac). https://www.vagrantup.com/vmware/index.html[Vagrant recommend VMWare]
 
 = Symlinks
 
