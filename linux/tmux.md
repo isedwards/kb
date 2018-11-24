@@ -10,4 +10,6 @@
 
 tmux will list all sessions with their current dimension. Then you simply detach from all the smaller sized sessions.
 
-Look into [saving and restoring sessions](https://superuser.com/questions/440015/restore-tmux-session-after-reboot)
+- Look into [saving and restoring sessions](https://superuser.com/questions/440015/restore-tmux-session-after-reboot)
+- Use `chsh` to [set tmux as your shell](https://unix.stackexchange.com/questions/43601/how-can-i-set-my-default-shell-to-start-up-tmux)
+(where tmux them uses its specified `default-shell`)
