@@ -1,6 +1,20 @@
 By default, `mysql 127.0.0.1` is [actually connecting over a socket](https://serverfault.com/a/259917), rather than through the network address. Add `-h 127.0.0.1` to force communication over TCP.
 
-== Key
+## Access
+
+Sometimes it is useful to grant remote access of MySQL database from any IP address for development VMs that are configured with a "Host-only" IP address, this especially makes access from Windows easier instead of specifying a single IP (that can change depending on which network you are connected to, and is more immediate that setting up port forwarding).
+
+```
+GRANT ALL PRIVILEGES
+ON database.*
+TO 'admin'@'%'
+IDENTIFIED BY 'newpassword';
+
+FLUSH PRIVILEGES;
+
+```
+
+## Key
 
 From the `CREATE TABLE` [manual entry](http://dev.mysql.com/doc/refman/5.1/en/create-table.html):
 
@@ -8,14 +22,13 @@ From the `CREATE TABLE` [manual entry](http://dev.mysql.com/doc/refman/5.1/en/cr
 > also be specified as just `KEY` when given in a column definition. This was
 > implemented for compatibility with other database systems.
 
-
-== Issues
+## Issues
 
 * [Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement](http://stackoverflow.com/questions/31951468/error-code-1290-the-mysql-server-is-running-with-the-secure-file-priv-option/31983737#31983737)
 * ERROR 1030 (HY000): Got error 28 from storage engine - disc space issue, either with the main database storage, /tmp, or insufficient space for socket file if transferring data over a network.
 * [Error Code: 1118](https://stackoverflow.com/a/39403564/) - Row size too large (> 8126). Changing some columns to TEXT or BLOB may help. In current row format, BLOB prefix of 0 bytes is stored inline.
 
-== Installation
+## Installation
 
 Installation as part of a standard [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu) stack.
 
@@ -28,8 +41,7 @@ sudo /usr/bin/mysql_secure_installation
 sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
 ....
 
-
-== Create database
+## Create database
 
 E.g. Creating a database suitable for [Drupal](https://www.drupal.org/documentation/install/create-database)
 
@@ -41,7 +53,7 @@ E.g. Creating a database suitable for [Drupal](https://www.drupal.org/documentat
 
  mysql -u root -p testdb < backup.sql
 
-== Python-MySQL
+## Python-MySQL
 
  sudo apt-get install python-mysqldb
 
@@ -66,7 +78,7 @@ finally:
         con.close()
 ....
 
-== Direct CSV/Tab delimited output
+## Direct CSV/Tab delimited output
 
 Output to [text file](http://www.tech-recipes.com/rx/1475/save-mysql-query-results-into-a-text-or-csv-file/)
 either as tab delimited
