@@ -1,3 +1,17 @@
+## Version
+
+On my development VMs, the following appears to be the case...
+
+- Ver 14.14 Distrib 5.5.61
+  - Default options are read from the following files in the given order:
+    /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
+  - **/etc/mysql/my.cnf** has contents and changes to the file work *(after server restart)*
+- Ver 14.14 Distrib 5.7.21
+  - Default options are read from the following files in the given order:
+    /etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf
+  - **/etc/mysql/my.cnf** just contains a link to conf directories *(changes to file in conf directories or overwriting my.cnf itself do not appear to be working)*
+
+
 ## Access
 
 By default, `mysql 127.0.0.1` is [actually connecting over a socket](https://serverfault.com/a/259917), rather than through the network address. Add `-h 127.0.0.1` to force communication over TCP.
@@ -5,6 +19,13 @@ By default, `mysql 127.0.0.1` is [actually connecting over a socket](https://ser
 Sometimes it is useful to grant remote access of MySQL database from any IP address for development VMs that are configured with a "Host-only" IP address, this especially makes access from Windows easier instead of specifying a single IP (that can change depending on which network you are connected to, and is more immediate that setting up port forwarding).
 
 ```
+# Find which config files mysql is reading:
+/usr/sbin/mysqld --help --verbose | grep -A 1 "Default options"
+
+sudo vi /etc/mysql/my.cnf
+# comment bind-address 127.0.0.1
+service mysql restart
+ 
 GRANT ALL PRIVILEGES ON database.* TO 'admin'@'%' IDENTIFIED BY 'newpassword';
 FLUSH PRIVILEGES;
 
