@@ -5,11 +5,7 @@ By default, `mysql 127.0.0.1` is [actually connecting over a socket](https://ser
 Sometimes it is useful to grant remote access of MySQL database from any IP address for development VMs that are configured with a "Host-only" IP address, this especially makes access from Windows easier instead of specifying a single IP (that can change depending on which network you are connected to, and is more immediate that setting up port forwarding).
 
 ```
-GRANT ALL PRIVILEGES
-ON database.*
-TO 'admin'@'%'
-IDENTIFIED BY 'newpassword';
-
+GRANT ALL PRIVILEGES ON database.* TO 'admin'@'%' IDENTIFIED BY 'newpassword';
 FLUSH PRIVILEGES;
 
 ```
