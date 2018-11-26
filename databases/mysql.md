@@ -2,14 +2,21 @@
 
 On my development VMs, the following appears to be the case...
 
+```
+# Find which config files mysql is reading:
+/usr/sbin/mysqld --help --verbose | grep -A 1 "Default options"
+
+```
+
 - Ver 14.14 Distrib 5.5.61
   - Default options are read from the following files in the given order:
-    /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
+    `/etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf`
   - **/etc/mysql/my.cnf** has contents and changes to the file work *(after server restart)*
 - Ver 14.14 Distrib 5.7.21
   - Default options are read from the following files in the given order:
-    /etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf
-  - **/etc/mysql/my.cnf** just contains a link to conf directories *(changes to file in conf directories or overwriting my.cnf itself do not appear to be working)*
+    `/etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf`
+  - **/etc/mysql/my.cnf** just contains a link to conf directories. Changes to the file in conf directories or even overwriting `/etc/mysql/my.cnf` do not appear to make any different *(an error added to the config file is not reported on restart)*
+  - Solution: `sudo cp /etc/mysql/mysql.conf.d/mysqld.cnf /etc/my.cnf` then restart (`/etc/my.cnf` did not already exist on Ubunutu 18.04.1)
 
 
 ## Access
