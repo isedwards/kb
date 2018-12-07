@@ -2,6 +2,7 @@
 
 - [Homepage](https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308) (via extension information in Visual Studio). Includes link to standalone [Multilingual App Toolkit 4.0 Editor tool](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit).
 - After installation, the `Project` menu gains a new option for the `Multilingual App Toolkit`
+- The MAT is enabled for a project `resx` files are added for each language choice and a new `MultilingualResources` directory is added to the project containing the `xlf` files.
 
 **Localization**
 
