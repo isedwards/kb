@@ -1,7 +1,7 @@
 # Setting up ssh among servers
 
 - The *primary* server is like your desktop machine normally. It contains the private key and it will initiate the `ssh` commands (the client)
-- On the *primary* server, as the correct user, run `ssh-keygen`. The example below allows you to supply a custom name, e.g. `id_custom`
+- On the *primary* server, as the correct user, run `ssh-keygen`. When asked for a filename you can supply a custom name, e.g. `id_custom` is used below.
 - If you can't use `ssh-copy-id -i id_custom.pub user@server` (because the account on the *secondary* server that you are copying to does not have a password setup) then copy the public key manually to the *secondary* server as the correct user. E.g. `cat id_custom.pub >> ~/.ssh/authorized_keys`
 - Check that you can login:
   - Make sure that the *secondary* server has the IP address of the *primary* server permitted for ssh access in the security rules
