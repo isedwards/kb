@@ -1,3 +1,11 @@
+## Summary table showing database sizes in Mb
+
+```
+SELECT table_schema "Database name", ROUND(SUM(data_length + index_length) / 1024 / 1024, 1) "DB Size in MB" FROM information_schema.tables GROUP BY table_schema;
+
+```
+
+
 ## Version
 
 On my development VMs, the following appears to be the case...
@@ -32,7 +40,7 @@ Sometimes it is useful to grant remote access of MySQL database from any IP addr
 sudo vi /etc/mysql/my.cnf
 # comment bind-address 127.0.0.1
 service mysql restart
- 
+
 GRANT ALL PRIVILEGES ON database.* TO 'admin'@'%' IDENTIFIED BY 'newpassword';
 FLUSH PRIVILEGES;
 
@@ -56,19 +64,21 @@ From the `CREATE TABLE` [manual entry](http://dev.mysql.com/doc/refman/5.1/en/cr
 
 Installation as part of a standard [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu) stack.
 
-....
+```
 sudo apt-get update
 sudo apt-get install apache2
 sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
 sudo mysql_install_db
 sudo /usr/bin/mysql_secure_installation
 sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
-....
+
+```
 
 ## Create database
 
 E.g. Creating a database suitable for [Drupal](https://www.drupal.org/documentation/install/create-database)
 
+```
  mysql -u root -p -e "CREATE DATABASE testdb CHARACTER SET utf8 COLLATE utf8_general_ci";
  mysql -u root -p
 
@@ -77,12 +87,15 @@ E.g. Creating a database suitable for [Drupal](https://www.drupal.org/documentat
 
  mysql -u root -p testdb < backup.sql
 
+```
+
 ## Python-MySQL
 
  sudo apt-get install python-mysqldb
 
 See [examples](http://zetcode.com/db/mysqlpython/)
-....
+
+```
 import MySQLdb as mdb
 import sys
 
@@ -100,7 +113,8 @@ except mdb.Error as e:
 finally:    
     if con:    
         con.close()
-....
+
+```
 
 ## Direct CSV/Tab delimited output
 
