@@ -6,7 +6,7 @@
 
 **MAT Bugs**
 - Error if try to translate any form containing a [TableLayoutPanel](https://multilingualapptoolkit.uservoice.com/forums/231158-general/suggestions/15701274-fix-convert-problem-xml-with-embedded-xml-struc)
-- "An error was encountered while loading one or more translation providers". For recommended solution see: [Microsoft Translator Moves to the Azure portal](https://multilingualapptoolkit.uservoice.com/knowledgebase/articles/1167898)
+- "An error was encountered while loading one or more translation providers". For recommended solution see: [Microsoft Translator Moves to the Azure portal](https://multilingualapptoolkit.uservoice.com/knowledgebase/articles/1167898) (sign up [instructions](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/translator-text-how-to-signup))
 
 **Cleaning up  XLIFF files**
 
