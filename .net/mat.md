@@ -3,6 +3,7 @@
 - [Homepage](https://marketplace.visualstudio.com/items?itemName=MultilingualAppToolkit.MultilingualAppToolkit-18308) (via extension information in Visual Studio). Includes link to standalone [Multilingual App Toolkit 4.0 Editor tool](https://developer.microsoft.com/en-us/windows/develop/multilingual-app-toolkit).
 - After installation, the `Project` menu gains a new option for the `Multilingual App Toolkit`
 - When MAT is enabled for a project `resx` files are added for each language choice and a new `MultilingualResources` directory is added to the project containing the `xlf` files. The `resx` files only contain strings from the forms if the form has its `Localizable` property set to `True`.
+- Unfortunately you cannot set `Localize` to `True` automatically using a script because this will not trigger the corresponding updating of the `resx` files, so you have to manually do this for each form.
 
 **MAT Bugs**
 - Error if try to translate any form containing a [TableLayoutPanel](https://multilingualapptoolkit.uservoice.com/forums/231158-general/suggestions/15701274-fix-convert-problem-xml-with-embedded-xml-struc)
