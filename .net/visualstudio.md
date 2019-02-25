@@ -8,7 +8,9 @@ Therefore I set my screen resolution a lot lower (e.g. 1280 x 800 instead of 256
 
 Windows can be confused until you log out and then log in again, but from thereon life becomes more sane again.
 
-Sadly, Windows 10 does not seem to preserve display settings for different user accounts, so I was unable to create a user account just for Visual Studio that would have these display settings. So, thanks to these joint failures in Visual Studio and Windows 10, there is no benefit to owning a retina display. Thanks Microsoft. 
+Sadly, Windows 10 does not seem to preserve display settings for different user accounts, so I was unable to create a user account just for Visual Studio that would have these display settings. So, thanks to these joint failures in Visual Studio and Windows 10, there is no benefit to owning a retina display. Thanks Microsoft.
+
+(Read more about [DPI awareness](http://www.visualstudioresources.com/2017/01/13/running-visual-studio-or-setups-with-dpi-virtualization-dpi-unaware-on-high-dpi-displays/)).
 
 ## PerfWatson
 
