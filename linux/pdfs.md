@@ -10,3 +10,8 @@ Add the page as an image in MS Word document and then make changes (e.g. adding 
 Combine the pages (make sure they are combined in the correct order, e.g. not 1, 10, 11, 2, ...)
 
     convert *.png edited.pdf
+
+## pdftk
+
+The process above results in a large output because all pages are converted to images. In the future, it would make sense to use `pdftk`
+and only modify the pages that are actually being edited.
