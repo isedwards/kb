@@ -1,11 +1,12 @@
 ## ImageMagick
 
-To sign documents without having to physically print, sign and then scanning them, first convert the original file into PNG images,
-update the page that requires the signature, and then recombine.
+To modify pdf documents without having to physically print, modify and then scan them, first convert the original file into PNG images,
+update the page that requires modifications, and then recombine.
 
     convert -units PixelsPerInch -density 300 input.pdf a.png
     
-Add page as image in MS Word and add signature etc.  Save as pdf and then convert page to png using the same method as above
-(replacing the original)
+Add the page as an image in MS Word document and then make changes (e.g. adding a signature etc).  Save as pdf and then convert page to png using the same method as above (replacing the original version)
 
-   convert *.png edited.pdf
+Combine the pages (make sure they are combined in the correct order, e.g. not 1, 10, 11, 2, ...)
+
+    convert *.png edited.pdf
