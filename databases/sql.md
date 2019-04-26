@@ -1,3 +1,7 @@
+### <> vs !=
+
+`<>` is ANSI-SQL. `!=` was introduced with T-SQL (Microsoft and Sybase's proprietary extension). `<>` is preferred [even by Microsoft](https://stackoverflow.com/questions/723195/should-i-use-or-for-not-equal-in-t-sql#comment53979514_723317)
+
 ### CAST vs CONVERT
 
 ```
