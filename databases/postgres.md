@@ -1,3 +1,5 @@
+- [COPY and \COPY](https://ieftimov.com/post/postgresql-copy/)
+
 ## Dump and restore
 
 If you are getting errors when restoring, like `ERROR:  constraint "tbl_a_b_e1532237_fk_a_b_id" for relation "tbl" already exists` then it's possible that the [database `DROP` didn't work](https://stackoverflow.com/a/52443294/).
