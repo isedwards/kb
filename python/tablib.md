@@ -5,6 +5,7 @@
 - When using Python 2.x, if you're not using unicode strings then tablib can fail with an error like: `UnicodeEncodeError: 'ascii' codec can't encode character u'\xa0' in position 20: ordinal not in range(128)`. An easy fix is to detect string data and convert it to unicode before tablib processes it:
 
 ```
+    # This solution is for Python 2.x. Later python versions do not have `unicode`.
     data = row['next_column']
     if isinstance(data, basestring):
         data = unicode(data)
