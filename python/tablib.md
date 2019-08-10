@@ -1,4 +1,6 @@
-- Awhile ago, it looked like [tablib](http://python-tablib.org/) had been abandoned, now has a new maintainer (but who really knows?).
+- We started using [tablib](http://python-tablib.org/) because it is used by [Django import/export](https://django-import-export.readthedocs.io/en/latest/)
+
+- Awhile ago, it looked like tablib had been abandoned, now has a new maintainer (but who really knows?).
 
 - Tablib *still* mangles data type on import and export for xlsx format. Excel dates become floats (using Excels numeric representation), whereas OpenPyXL correctly imports them as `datatime`.
 
@@ -38,5 +40,7 @@
       wb.save(filename=filename)
 
   ```
+
+- There are also issues with [OpenPyXl](https://openpyxl.readthedocs.io/en/stable/) and some unicode characters, e.g. [tablib#370](https://github.com/vinayak-mehta/tablib/issues/370#issuecomment-511521685).
 
 - Also note that the old `xls` format (when tablib uses `xlrd` and `xlwt`) is limited to 256 columns.
