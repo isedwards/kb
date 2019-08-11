@@ -1,6 +1,6 @@
 - We started using [tablib](http://python-tablib.org/) because it is used by [Django import/export](https://django-import-export.readthedocs.io/en/latest/)
 
-- Awhile ago, it looked like tablib had been abandoned, now has a new maintainer (but who really knows?).
+- A few times it's looked like tablib has been abandoned, it now has a new maintainer ([but who really knows?](https://github.com/vinayak-mehta/tablib/issues/329#issuecomment-520212465)).
 
 - Tablib *still* mangles data type on import and export for xlsx format. Excel dates become floats (using Excels numeric representation), whereas OpenPyXL correctly imports them as `datatime`.
 
@@ -44,3 +44,26 @@
 - There are also issues with [OpenPyXl](https://openpyxl.readthedocs.io/en/stable/) and some unicode characters, e.g. [tablib#370](https://github.com/vinayak-mehta/tablib/issues/370#issuecomment-511521685).
 
 - Also note that the old `xls` format (when tablib uses `xlrd` and `xlwt`) is limited to 256 columns.
+
+- Unable to open a simple xlxs file on Python 3 (working in Python 2)
+
+| Integer | String | Float | Date       |
+|---------|--------|-------|------------|
+|       1 | abc    |   1.2 | 10/08/2019 |
+
+```
+>>> import tablib
+>>> data = tablib.Dataset().load(open('tablib_test.xlsx').read())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/usr/lib/python3.4/codecs.py", line 319, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa0 in position 22: invalid start byte
+
+>>> import openpyxl
+>>> wb = openpyxl.load_workbook(filename = 'tablib_test.xlsx')
+>>> [cell.value for cell in wb.active[2]]
+[1, 'abc', 1.2, datetime.datetime(2019, 8, 10, 0, 0)]
+>>>
+
+```
