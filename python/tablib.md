@@ -1,6 +1,6 @@
 - We started using [tablib](http://python-tablib.org/) because it is used by [Django import/export](https://django-import-export.readthedocs.io/en/latest/)
 
-- A few times it's looked like tablib has been abandoned, it now has a new maintainer ([but who really knows?](https://github.com/vinayak-mehta/tablib/issues/329#issuecomment-520212465)).
+- [A few times](https://github.com/vinayak-mehta/tablib/issues/124) it's looked like tablib has been abandoned, it now has a new maintainer ([but who really knows?](https://github.com/vinayak-mehta/tablib/issues/329#issuecomment-520212465)).
 
 - Tablib *still* mangles data type on import and export for xlsx format. Excel dates become floats (using Excels numeric representation), whereas OpenPyXL correctly imports them as `datatime`.
 
