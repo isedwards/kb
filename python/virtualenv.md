@@ -1,1 +1,3 @@
-- https://gist.github.com/datagrok/2199506
+- [Installing an using virtual environments](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
+- [Conda vs pip vs virtualenv/](https://docs.conda.io/projects/conda/en/latest/commands.html#conda-vs-pip-vs-virtualenv-commands)
+- [Conda myths and miconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/#Myth-#3:-Conda-and-pip-are-direct-competitors)
