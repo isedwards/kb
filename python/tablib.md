@@ -2,7 +2,7 @@
 
 - [A few times](https://github.com/vinayak-mehta/tablib/issues/124) it's looked like tablib has been abandoned, it now has a new maintainer ([but who really knows?](https://github.com/vinayak-mehta/tablib/issues/329#issuecomment-520212465)).
 
-- Tablib *still* mangles data type on import and export for xlsx format. Excel dates become floats (using Excels numeric representation), whereas OpenPyXL correctly imports them as `datatime`.
+- Tablib *still* mangles data type on import and export for xlsx format. Excel [dates become floats](https://github.com/vinayak-mehta/tablib/issues/373) (using Excels numeric representation), whereas OpenPyXL correctly imports them as `datatime`.
 
   - Importing: When using Python 2.x, if you're not using unicode strings then tablib can fail with an error like: `UnicodeEncodeError: 'ascii' codec can't encode character u'\xa0' in position 20: ordinal not in range(128)`. An easy fix is to detect string data and convert it to unicode before tablib processes it:
 
