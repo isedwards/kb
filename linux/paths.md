@@ -1,5 +1,6 @@
 Paths you should know:
 - /home/username/ (~)
+- ~/.ssh/config
 - /etc/apache2/
 - /etc/hosts/
 - /etc/nginx/sites-*/
