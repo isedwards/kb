@@ -1,3 +1,7 @@
+Instead of executing `crontab -l` as each user, you should be able to see all of the cron tables with:
+
+`ll /var/spool/cron/crontabs`
+
 Ansible
 =======
 
