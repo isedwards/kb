@@ -1,6 +1,10 @@
-Instead of executing `crontab -l` as each user, you should be able to see all of the cron tables with:
+Gotcha
+======
+`crontab -l` ran as each user may still not show all of the cron jobs that will run, you should also look in:
+- /var/spool/cron/crontabs/
+- /etc/cron.*/
 
-`ll /var/spool/cron/crontabs`
+Also, make sure you leave a blank line at the end of your crontab files, otherwise folklore laments that you may be silently torpedoed.
 
 Ansible
 =======
