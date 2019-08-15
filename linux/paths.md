@@ -6,4 +6,4 @@ Paths you should know:
 - /etc/nginx/sites-*/
 - /etc/supervisor/conf.d/
 - /var/www/
-- /var/spool/cron/crontabs/
+- /var/spool/cron/crontabs/  and  /etc/cron.d*/
