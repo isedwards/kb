@@ -55,6 +55,7 @@ sudo apt-get install -y dkms build-essential linux-headers-generic linux-headers
 mkdir /media/cdrom
 sudo mount /dev/cdrom /media/cdrom
 sudo /media/cdrom/VBoxLinuxAdditions.run
+# sudo reboot now
 
 ```
 If you are installing a server image, before the final step of running `VBoxLinuxAdditions.run`, either:
@@ -72,7 +73,7 @@ To copy and paste into the console running in the VirtualBox window you may want
 Attempting to access the shared folders will give the error `Permission denied`
 ```
 sudo adduser your_username vboxsf
-sudo reboot
+# sudo reboot now
 ```
 
 ==== Cannot create symbolic links in shared folder
