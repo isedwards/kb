@@ -23,8 +23,7 @@ Prehaps, instead, you can create the invalid empty form you want by making it a 
 
 ---
 
-You can change the data in a bound form:
-
+If you are using a copy of `request.POST` then you can change the data in a bound form:
 ```
 form = MyForm(request.POST.copy())
 form.data['person'] = person
