@@ -1,19 +1,21 @@
-It is better to create multiple ModelForms to represent a model than to try and use a single form and shoehorn it into doing different tasks.
+It is better to create multiple ModelForms to represent a model than to try and use a *single form* and shoehorn that form into doing different tasks.
 
-If, for example, you have a `site` model. Creating a new site may require many fields, some of which will be required (`blank=False` in the model).
+For example, if you have a `Sites` model, creating a new site may require many fields - some of which will be required (`blank=False` in the model).
 
-When selecting an existing site by name, you may only require the name field, but if you reuse the form for creating a site then this form will be invalid.
+When selecting an existing site by name, you may only require the name field, but if you reuse the main form for creating a site then this form will be invalid.
 
 The simplier forms can be created using [modelform_factory()](https://docs.djangoproject.com/en/2.0/topics/forms/modelforms/#modelform-factory-function).
 
-Also you can create a form (that will pass validation) straight from a model instance if you know something like the `id` (prehaps from the url, or a different POST variable): `form = SiteForm(instance=Site.objects.get(id=id)`.
+Also you can create a form (that will pass validation) straight from a model instance if you know something like the `id` (prehaps from the url, or a different POST variable): `form = SiteForm(instance=Sites.objects.get(id=id)`.
+
+---
 
 If you have an unbounded form (with no data) then unfortunately you cannot add and error to this (and have it fail validation), e.g.
 
     form = MyForm()
     form.add_error({'name': 'Invalid name'})
     
-This is because the `add_error` method tries to remove the data from the forms `cleaned_data` (which does not exist), and even if you add the error manually (to form['field_name']._errors) this doesn't get passed to `form.field_name.errors` when it is rendered in the template?
+This is because the `add_error` method tries to remove the data from the form's `cleaned_data` (which does not exist), and even if you add the error manually (to `form['field_name']._errors`) this doesn't get passed to `form.field_name.errors` when it is rendered in the template.
 
 Prehaps, instead, you can create the invalid empty form you want by making it a bound form and passing in an empty request.POST...
 
