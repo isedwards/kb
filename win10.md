@@ -13,6 +13,18 @@ If linux is not already your primary OS, perhaps now is the time, it's free and 
 
 ---
 
+### Preventing keyboard short-cuts from changing the keyboard language
+
+I seem to hit Left Alt + Shift all the time. The result is that the keyboard language changes (if you have multiple input methods).
+
+- Open setting <kbd>Windows Key</kbd> + <kbd>I</kbd> 
+- Devices > Typing tab > Advanced Keyboard Settings (at the bottom)
+- Switching Input Methods > Advanced keyboard settings - shows the Text Services and Input Languages window
+- Advanced Key Settings tab > Between Input Languages > Change Key Sequences
+- Change "Switch input language" and "Switch keyboard language" to "Not assigned"
+
+---
+
 ## Windows 10 Creators Update
 
 A mandatory update that eats up disc space and installs some 3D paint package that I'm never going to use. It broke two things on my Windows machine - firstly VirtualBox (vital for almost all of my development work), fortunately upgrading from 5.16 to 5.1.22 fixed this with no new issues arising.
