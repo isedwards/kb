@@ -1,11 +1,3 @@
-## Still using Windows?
-
-Windows 10 is a different animal to previous releases with Microsoft undertaking more monitoring than ever before, especially in the `Tech Preview`_.
-
-If linux is not already your primary OS, perhaps now is the time, it's free and I can honestly say it is better designed than Windows or MacOS.
-
----
-
 ## Multiple desktops
 
 - <kbd>Windows Key</kbd> + <kbd>Tab</kbd>
@@ -22,6 +14,8 @@ I seem to hit Left Alt + Shift all the time. The result is that the keyboard lan
 - Switching Input Methods > Advanced keyboard settings - shows the Text Services and Input Languages window
 - Advanced Key Settings tab > Between Input Languages > Change Key Sequences
 - Change "Switch input language" and "Switch keyboard language" to "Not assigned"
+
+Hovering over the language input icon in the tool tray give a pop up saying <kbd>Windows</kbd> + <kbd>Space</kbd> changes the language input method. This seems to still be true.
 
 ---
 
