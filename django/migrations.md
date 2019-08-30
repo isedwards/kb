@@ -2,6 +2,8 @@
 
 If `./manage.py makemigrations --dry-run` is hanging (even when there are no new changes) the problem may be that there are active transactions. This happened to me after interupting a large data migration using <kbd>Ctrl</kbd><kbd>c</kbd>. You can restart postgres with `sudo /etc/init.d/postgresql restart` and MySQL with `sudo /etc/init.d/mysql restart`.
 
+Alternatively, there could be a problem like limted disc space or memory.
+
 
 ### Makemigrations and migrate failing when trying to remove fields from model
 
