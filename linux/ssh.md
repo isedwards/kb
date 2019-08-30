@@ -14,6 +14,8 @@
 
 # Port forwarding
 
+See [HowToGeek](https://www.howtogeek.com/168145/how-to-use-ssh-tunneling/) for more on port forwarding, including setting up PuTTY and a SOCKS proxy.
+
 You can set up [port forwarding](http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/#going-further) in your ssh config file
 
 ```
