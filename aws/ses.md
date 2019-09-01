@@ -13,6 +13,8 @@ If you get an error message like the following in your `logs/django_site.log`:
 
 Setup the AWS [time sync service](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html) (see "To configure your Ubuntu or Debian derivative instance to use the Amazon Time Sync Service"). E.g. `sudo apt install chrony` ([chrony](https://chrony.tuxfamily.org)) and don't forget to `sudo reboot`.
 
+It looks like chrony only syncs server time on boot. When you have a virtual machine open a long time on a computer that has been hibernated etc. then the time possibly drifts and causes problems.
+
 On our webapps systems, the legacy way to send email using SES is along the lines of:
 
     from projectname.ses import Email
