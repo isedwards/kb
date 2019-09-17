@@ -4,7 +4,7 @@ Gotcha
 - /var/spool/cron/crontabs/
 - /etc/cron.*/
 
-Also, make sure you leave a blank line at the end of your crontab files, otherwise folklore laments that you may be silently torpedoed.
+Also, make sure you leave a blank line at the end of your crontab files and ensure the files are not writable by group/other, otherwise folklore laments that you may be silently torpedoed.
 
 Ansible
 =======
