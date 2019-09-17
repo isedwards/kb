@@ -4,7 +4,7 @@ Gotcha
 - /var/spool/cron/crontabs/
 - /etc/cron.*/
 
-Also, make sure you leave a blank line at the end of your crontab files and ensure the files are not writable by group/other, otherwise folklore laments that you may be silently torpedoed.
+Also, make sure you leave a blank line at the end of your crontab files and ensure the files are not writable by group/other, otherwise folklore laments that you may be silently torpedoed. Apparently `man 8 cron` (on Debian) also says that files in `/etc/cron.d/` may only contain alphanumeric characters, '-' and '_'. Specifically, no dots.
 
 Ansible
 =======
