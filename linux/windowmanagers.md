@@ -1,2 +1,3 @@
-- If you install [Ratpoison](http://www.nongnu.org/ratpoison/) you'll need extra [configuration](http://danielwebb.us/software/ratpoison/
-)
+- Consider running a window manager [under WSL 2](https://virtualizationreview.com/articles/2017/02/08/graphical-programs-on-windows-subsystem-on-linux.aspx)
+- If you install [Ratpoison](http://www.nongnu.org/ratpoison/) you'll need extra [configuration](http://danielwebb.us/software/ratpoison/)
+- [FLWM](https://en.wikipedia.org/wiki/FLWM) is very small and capable, it is used in [Tiny Core Linux](http://www.tinycorelinux.net/)
