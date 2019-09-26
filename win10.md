@@ -1,3 +1,5 @@
+- [Customize Windows 10 boot logo](https://www.quora.com/How-do-I-change-windows-10-boot-screen/answer/San-Abhignu)
+
 ## Multiple desktops
 
 - <kbd>Windows Key</kbd> + <kbd>Tab</kbd>
