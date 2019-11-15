@@ -1,3 +1,5 @@
+`Registering a variable and using echo <https://github.com/ansible/ansible/issues/4317#issuecomment-25463761>`_
+
 - `Human readable output <https://stackoverflow.com/a/45086602/>`_
 
 
