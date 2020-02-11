@@ -1,3 +1,16 @@
+## The SECRET_KEY setting must not be empty
+
+This can be caused by Django not being able to process the settings file.
+
+If you're using an non-standard settings file location then this must be specified in wsgi.py AND also either in the
+DJANGO_SETTINGS_MODULE environment variable, or passed as an argument to each invocation of `manage.py`, e.g.
+
+  - `manage.py runserver --settings=myproject.settings.local`
+  - `manage.py migrate --settings=myproject.settings.local`
+  
+Also ensure that `myproject.settings.production` is importable from `manage.py shell`.
+
+
 ## Looping over all records
 
 This just crashes `Killed`, or worse, hangs without explanation...
