@@ -1,6 +1,6 @@
 - [Registering a variable and using echo](https://github.com/ansible/ansible/issues/4317#issuecomment-25463761)
 - [Human readable output](https://stackoverflow.com/a/45086602/)
-- [Try out](https://stackoverflow.com/a/43403229/1624894):
+- [Try out](https://stackoverflow.com/a/43403229/1624894) conditionally defined variables:
   `my_var: "{{ 'foo' if my_condition else '' }}"`
 
 **NOTE: This file was intended to only documents gotchas/quirks.**
