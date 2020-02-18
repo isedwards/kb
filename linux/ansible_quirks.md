@@ -5,6 +5,23 @@
 
 **NOTE: This file was intended to only documents gotchas/quirks.**
 
+## Setting variables in inventory/hosts files
+
+The type for values set in the hosts file always string. If you are setting a boolean/integer etc then you have to modify the type later (I've not tried adding the type Jinga2 type conversion within the host file itself, but that wouldn't be very neat)
+
+**hosts:**
+```
+[webservers]
+192.168.1.1 setup_git_repo_string=False
+
+```
+
+**env_vars/base.yml**
+```
+setup_git_repo: "{{ setup_git_repo_string|default(true)|bool }}"
+
+```
+
 ## vars_files:
 
 Ansible (2.1.1.0) currently does not seem to support using a variable input for `var_files`, e.g.
