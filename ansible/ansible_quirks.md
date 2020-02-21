@@ -1,3 +1,5 @@
+Your best friend: [debug module](https://docs.ansible.com/ansible/latest/modules/debug_module.html)
+
 - [Registering a variable and using echo](https://github.com/ansible/ansible/issues/4317#issuecomment-25463761)
 - [Human readable output](https://stackoverflow.com/a/45086602/)
 - [Try out](https://stackoverflow.com/a/43403229/1624894) conditionally defined variables:
