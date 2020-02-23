@@ -1,3 +1,23 @@
+## inspectdb failed with MySQL
+
+**error:**
+```
+query = query.decode(errors='replace')
+AttributeError: 'str' object has no attribute 'decode'
+
+```
+
+**workaround:**
+
+Temporarily edit django source to comment the line
+```
+python3
+import django
+
+print(os.path.join(os.path.dirname(django.__file__), 'db', 'backends', 'mysql', 'operations.py'))
+
+```
+
 ## The SECRET_KEY setting must not be empty
 
 This can be caused by Django not being able to process the settings file.
