@@ -1,3 +1,9 @@
+## Development
+
+[Configure PostgreSQL to allow remote connection](https://blog.bigbinary.com/2016/01/23/configure-postgresql-to-allow-remote-connection.html) (including passwordless connections)
+
+## COPY
+
 - [COPY and \COPY](https://ieftimov.com/post/postgresql-copy/)
 
 ## Dump and restore
