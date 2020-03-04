@@ -1,0 +1,1 @@
+- [django-settings-export](https://stackoverflow.com/a/25841039/)
