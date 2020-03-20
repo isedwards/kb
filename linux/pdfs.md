@@ -1,6 +1,8 @@
 ## Examples
 - Signing a page of a pdf document and reassembing the pieces
 
+**These examples are obsolete, I'm now using the free Abobe Acrobat Reader and the built-in stamp tool** to add a signature image and the `sign document by typing` tool on the menu bar to write a date.
+
 ```
 pdftk in.pdf cat 1-3 output begin.pdf
 pdftk in.pdf cat 4 output to_sign.pdf
