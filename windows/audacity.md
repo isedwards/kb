@@ -1,0 +1,1 @@
+I'm unable to record audio when it is played to speakers, but it works when playing to headphones. See also [error opening sound device](https://manual.audacityteam.org/man/error_opening_sound_device.html).
