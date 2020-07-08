@@ -2,7 +2,7 @@
 
 Virtualbox may decline due to lack of [investment by Oracle](https://developers.slashdot.org/story/15/01/30/1530245/virtualbox-development-at-a-standstill). It may soon be time to jump ship and consider investing in VMWare Workstation (PC), VMWare Fusion (mac) or Parallels (mac). [Vagrant recommend VMWare](https://www.vagrantup.com/vmware/index.html).
 
-I'm stuck on VirtualBox 5.1.38 (see [old downloads](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)), earlier versions (e.g. 5.0.40) fail to boot my existing VMs and later versions (e.g. 6+) cause my machine to freeze. Since I can't run VBox 6+ I'm unable to use Hyper-V and VirtualBox side-by-side using Microsoft's Virtual Machine Platform to allow VBox to access VT-x.
+I'm stuck on VirtualBox 5.1.38 (see [old downloads](https://www.virtualbox.org/wiki/Download_Old_Builds)), earlier versions (e.g. 5.0.40) fail to boot my existing VMs and later versions (e.g. 6+) cause my machine to freeze. Since I can't run VBox 6+ I'm unable to use Hyper-V and VirtualBox side-by-side using Microsoft's Virtual Machine Platform to allow VBox to access VT-x.
 
 ##  Symlinks
 
