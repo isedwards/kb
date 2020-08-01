@@ -1,5 +1,7 @@
 ## Leaving VirtualBox
 
+See: [Running Linux on Hyoer-V](https://www.nakivo.com/blog/run-linux-hyper-v/)
+
 - [Migrating existing VMs](https://www.groovypost.com/howto/migrate-virtual-box-vms-windows-10-hyper-v/) from VirtualBox to Hyper-V requires extra tools. So I'm just starting again
 - If I need VirtualBox then I'll use if on a different computer
 - Hopefully I won't need vagrant as part of a development
