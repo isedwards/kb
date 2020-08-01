@@ -1,5 +1,7 @@
 ## Hyper-V dual boot
 
+**This really doesn't work for me** - Probably ditching VBox
+
 1. Ensure you have no running VirtualBox virtual machines running and close it down. If you have had any running, I’d actually reboot before continuing. I have nothing to say that this is needed or you’ll end yup with issues if you don’t, but it’s good practice for this;
 
 2. Install Hyper-V either using Chocolatey `choco install Microsoft-Hyper-V-All -source windowsFeatures` or PowerShell `Enable-WindowsOptionalFeature -FeatureName Microsoft-Hyper-V-All -Online -NoRestart` (note that if you are going to run this in PowerShell it must be in Windows PowerShell - the cmdlet does not exist in PowerShell Core);
