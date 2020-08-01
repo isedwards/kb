@@ -2,20 +2,20 @@
 
 1. Ensure you have no running VirtualBox virtual machines running and close it down. If you have had any running, I’d actually reboot before continuing. I have nothing to say that this is needed or you’ll end yup with issues if you don’t, but it’s good practice for this;
 
-2. Install Hyper-V either using Chocolatey choco install Microsoft-Hyper-V-All -source windowsFeatures or PowerShell Enable-WindowsOptionalFeature -FeatureName Microsoft-Hyper-V-All -Online -NoRestart (note that if you are going to run this in PowerShell it must be in Windows PowerShell - the cmdlet does not exist in PowerShell Core);
+2. Install Hyper-V either using Chocolatey `choco install Microsoft-Hyper-V-All -source windowsFeatures` or PowerShell `Enable-WindowsOptionalFeature -FeatureName Microsoft-Hyper-V-All -Online -NoRestart` (note that if you are going to run this in PowerShell it must be in Windows PowerShell - the cmdlet does not exist in PowerShell Core);
 
 3. We are going to create the boot entry for running Hyper-V:
 
-4. Make a copy the current boot options so we have the same bootup, but with / without Hyper-V. Run (note that the single quotes around the {} is important if you are running this from the PowerShell console):
+4. Make a copy the current boot options so we have the same bootup, but with / without Hyper-V. Run (note that the single quotes around the `{}` is important if you are running this from the PowerShell console):
 
 ```
 PS> bcdedit /copy '{current}' /d "Windows 10 Hyper-V"
 The entry was successfully copied to {47ee463b-3af8-11e9-9247-8cec4b29743c}
 ```
 
-5. In the output of the above command note the ID inside the {}. We will need this shortly.
+5. In the output of the above command note the ID inside the `{}`. We will need this shortly.
 
-6. We are going to enable Hyper-V to run for this new boot entry. Run the below replacing <CREATED ID> with the ID noted in the last step:
+6. We are going to enable Hyper-V to run for this new boot entry. Run the below replacing `<CREATED ID>` with the ID noted in the last step:
 
 ```
 PS> bcdedit /set '{<CREATED ID>}' hypervisorlaunchtype auto
