@@ -1,3 +1,9 @@
+## Leaving VirtualBox
+
+- I'm [migrating VirtualBox](https://www.groovypost.com/howto/migrate-virtual-box-vms-windows-10-hyper-v/) machines to Hyper-V.
+- If I need VirtualBox then I'll use if on a different computer
+- Hopefully I won't need vagrant as part of a development
+
 ## Hyper-V dual boot
 
 **This really doesn't work for me** - Probably ditching VBox
