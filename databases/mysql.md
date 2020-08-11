@@ -1,3 +1,40 @@
+## Remote access
+
+By default, `mysql 127.0.0.1` is [actually connecting over a socket](https://serverfault.com/a/259917), rather than through the network address. Add `-h 127.0.0.1` to force communication over TCP.
+
+Sometimes it is useful to grant remote access of MySQL database from any IP address for development VMs that are configured with a "Host-only" IP address, this especially makes access from Windows easier instead of specifying a single IP (that can change depending on which network you are connected to, and is more immediate that setting up port forwarding).
+
+```
+# Ubuntu 20.04 Uncomplicated firewall
+sudo ufw allow mysql/tcp
+
+# mysql  Ver 8.0.21-0ubuntu0.20.04.3 for Linux on x86_64 ((Ubuntu))
+mysql --version
+
+# Find which config files mysql is reading:
+/usr/sbin/mysqld --help --verbose | grep -A 1 "Default options"
+
+# On Ubuntu 20.04 the above leads us to /etc/mysql/my.cnf with includes /etc/mysql/mysql.conf.d/ (which contains /etc/mysql/mysql.conf.d/mysqld.cnf)
+#sudo vi /etc/mysql/my.cnf
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+
+# comment bind-address 127.0.0.1
+service mysql restart
+
+# Latest MySQL versions finally require sudo for root account
+sudo mysql -u root -p
+
+# Starting with MySQL 8 you no longer can (implicitly) create a user using the GRANT command
+# GRANT ALL PRIVILEGES ON database.* TO 'admin'@'%' IDENTIFIED BY 'newpassword';
+CREATE USER 'admin'@'%' IDENTIFIED BY 'newpassword';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+ALTER USER 'admin'@'localhost' IDENTIFIED BY 'New-Password-Here';
+
+```
+
+
 ## Summary table showing database sizes in Mb
 
 ```
@@ -25,26 +62,6 @@ On my development VMs, the following appears to be the case...
     `/etc/my.cnf /etc/mysql/my.cnf ~/.my.cnf`
   - **/etc/mysql/my.cnf** just contains a link to conf directories. Changes to the file in conf directories or even overwriting `/etc/mysql/my.cnf` do not appear to make any different *(an error added to the config file is not reported on restart)*
   - Solution: `sudo cp /etc/mysql/mysql.conf.d/mysqld.cnf /etc/my.cnf` then restart (`/etc/my.cnf` did not already exist on Ubunutu 18.04.1)
-
-
-## Access
-
-By default, `mysql 127.0.0.1` is [actually connecting over a socket](https://serverfault.com/a/259917), rather than through the network address. Add `-h 127.0.0.1` to force communication over TCP.
-
-Sometimes it is useful to grant remote access of MySQL database from any IP address for development VMs that are configured with a "Host-only" IP address, this especially makes access from Windows easier instead of specifying a single IP (that can change depending on which network you are connected to, and is more immediate that setting up port forwarding).
-
-```
-# Find which config files mysql is reading:
-/usr/sbin/mysqld --help --verbose | grep -A 1 "Default options"
-
-sudo vi /etc/mysql/my.cnf
-# comment bind-address 127.0.0.1
-service mysql restart
-
-GRANT ALL PRIVILEGES ON database.* TO 'admin'@'%' IDENTIFIED BY 'newpassword';
-FLUSH PRIVILEGES;
-
-```
 
 ## Key
 
