@@ -34,6 +34,15 @@ ALTER USER 'admin'@'localhost' IDENTIFIED BY 'New-Password-Here';
 
 ```
 
+Check that you can log in from the machine itself, but forcing the connection over IP using the VM's IP address:
+```
+# root fails from remote location
+mysql -h 192.168.203.40 -u root -p
+
+# new admin account suceeds. Also checking expected port (--port is ignored if connecting over sockets, but `-h IP` here ensures --port is used)
+mysql -h 192.168.203.40 --port 3306 -u admin -p
+
+```
 
 ## Summary table showing database sizes in Mb
 
