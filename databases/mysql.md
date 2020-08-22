@@ -32,6 +32,10 @@ FLUSH PRIVILEGES;
 
 ALTER USER 'admin'@'localhost' IDENTIFIED BY 'New-Password-Here';
 
+# To ease development connections using old versions of tools like HeidiSQL switch back
+# to using mysql native password. Failed with 'localhost' so changed to '%' https://stackoverflow.com/questions/49194719
+ALTER USER 'admin'@'localhost' IDENTIFIED WITH mysql_native_password BY 'New-Password-Here';
+
 ```
 
 Check that you can log in from the machine itself, but forcing the connection over IP using the VM's IP address:
