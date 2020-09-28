@@ -1,0 +1,3 @@
+- Add ssh (not documented here) and connect to remove server using green section in lower left
+- Open directory and create a workspace if there isn't one alreayd
+- Setup [virtualenv](https://code.visualstudio.com/docs/python/environments)
