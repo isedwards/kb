@@ -1,0 +1,2 @@
+- [pip freeze vs pip list](https://stackoverflow.com/a/33207042/)
+- [pip -e](https://stackoverflow.com/a/59667164/)
