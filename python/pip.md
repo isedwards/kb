@@ -1,3 +1,4 @@
+- Using `pip freeze` with virtualenv gives [`pkg-resources==0.0.0`](https://stackoverflow.com/a/39638060)
 - [pip freeze vs pip list](https://stackoverflow.com/a/33207042/)
 - [pip -e](https://stackoverflow.com/a/59667164/)
 - pipdeptree -r -p package_name
