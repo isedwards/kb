@@ -1,3 +1,4 @@
 - [pip freeze vs pip list](https://stackoverflow.com/a/33207042/)
 - [pip -e](https://stackoverflow.com/a/59667164/)
 - pipdeptree -r -p package_name
+- Get [summary and version](https://stackoverflow.com/a/63118806/1624894) for all installed packages
