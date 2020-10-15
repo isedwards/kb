@@ -1,5 +1,6 @@
 - Using `pip freeze` with virtualenv gives [`pkg-resources==0.0.0`](https://stackoverflow.com/a/39638060)
 - [pip freeze vs pip list](https://stackoverflow.com/a/33207042/)
 - [pip -e](https://stackoverflow.com/a/59667164/)
+- Example [requirements directory](https://github.com/django/djangoproject.com/tree/master/requirements) (with frozen dependencies)
 - pipdeptree -r -p package_name
 - Get [summary and version](https://stackoverflow.com/a/63118806/1624894) for all installed packages
