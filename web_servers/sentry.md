@@ -1,0 +1,1 @@
+- Sentry [onpremise](https://github.com/getsentry/onpremise) as a docker container
