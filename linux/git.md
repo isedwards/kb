@@ -1,3 +1,5 @@
+`git status --ignored`
+
 Clean
 =====
 `git clean` will display the files that are removed. If some files are being missed by `git clean -xf` then add the `-d` switch to act on untracted directories, not just files in tracked directories (use `-n` for a `--dry-run`).
