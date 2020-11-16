@@ -2,3 +2,4 @@
 -- [comment on Medium article](https://medium.com/@timonweb/hi-kevin-thank-you-for-sharing-your-experience-e5bec64a6635)
 
 - It's isn't possible to [change the page type](https://stackoverflow.com/questions/46736274/changing-page-type-via-wagtail-admin) after it has been created.
+- Discuss on StreamField [being immutable](https://stackoverflow.com/questions/40612658/add-modify-blocks-value-in-wagtail-streamfield-from-shell) (and potential for this to become mutable in the future)
