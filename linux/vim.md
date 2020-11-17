@@ -1,5 +1,6 @@
 ## Vim
 
+* Disable/enable tab insertion, especially relevant to pasting `:set paste` / `:set nopaste`
 * <KBD>ctrl</KBD><KBD>q</KBD> to unstick a locked screen (caused by pressing <KBD>ctrl</KBD><KBD>s</KBD>)
 * <KBD>G</KBD><KBD>$</KBD> to move to the end of the file
 
