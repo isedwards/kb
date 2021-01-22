@@ -1,5 +1,8 @@
 - [WSL2 Installation](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps) ([error solved](https://github.com/microsoft/WSL/issues/4299#issuecomment-678650491))
-- Set up [latest version of docker](https://docs.docker.com/engine/install/ubuntu/)
+- WSL2 doesn't currently use the standard version of docker, see [VSCode blog](https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2) and link to [docker preview](https://docs.docker.com/docker-for-windows/wsl/)
+
+(when I tried to install standard docker I got the error `docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?`)
+
 <!--
 Late 2018 - Windows Subsystem for Linux (WSL) still doesn't seem ready for prime time.
 
