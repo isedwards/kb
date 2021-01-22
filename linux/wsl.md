@@ -1,4 +1,5 @@
 - [WSL2 Installation](https://docs.microsoft.com/en-us/windows/wsl/install-win10#manual-installation-steps) ([error solved](https://github.com/microsoft/WSL/issues/4299#issuecomment-678650491))
+- Set up [latest version of docker](https://docs.docker.com/engine/install/ubuntu/)
 <!--
 Late 2018 - Windows Subsystem for Linux (WSL) still doesn't seem ready for prime time.
 
