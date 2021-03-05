@@ -1,3 +1,10 @@
+## Frequently encountered errors
+
+* [Failed to load caching_sha2_password authentication plugin](https://tableplus.com/blog/2018/07/failed-to-load-caching-sha2-password-authentication-plugin-solved.html) - MySQL 8 has changed the default authentication method. MariaDB [seem unimpressed](https://mariadb.com/kb/en/authentication-plugin-sha-256/) by the approach. The general advice, [in multiple places](https://stackoverflow.com/a/49935803/1624894) is to switch back to the old auth method using `ALTER USER 'yourusername'@'localhost' IDENTIFIED WITH mysql_native_password BY 'youpassword';`
+* [Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement](http://stackoverflow.com/questions/31951468/error-code-1290-the-mysql-server-is-running-with-the-secure-file-priv-option/31983737#31983737)
+* ERROR 1030 (HY000): Got error 28 from storage engine - disc space issue, either with the main database storage, /tmp, or insufficient space for socket file if transferring data over a network.
+* [Error Code: 1118](https://stackoverflow.com/a/39403564/) - Row size too large (> 8126). Changing some columns to TEXT or BLOB may help. In current row format, BLOB prefix of 0 bytes is stored inline.
+
 ## Remote access
 
 By default, `mysql 127.0.0.1` is [actually connecting over a socket](https://serverfault.com/a/259917), rather than through the network address. Add `-h 127.0.0.1` to force communication over TCP.
@@ -83,12 +90,6 @@ From the `CREATE TABLE` [manual entry](http://dev.mysql.com/doc/refman/5.1/en/cr
 > `KEY` is normally a synonym for `INDEX`. The key attribute `PRIMARY KEY` can
 > also be specified as just `KEY` when given in a column definition. This was
 > implemented for compatibility with other database systems.
-
-## Issues
-
-* [Error Code: 1290. The MySQL server is running with the --secure-file-priv option so it cannot execute this statement](http://stackoverflow.com/questions/31951468/error-code-1290-the-mysql-server-is-running-with-the-secure-file-priv-option/31983737#31983737)
-* ERROR 1030 (HY000): Got error 28 from storage engine - disc space issue, either with the main database storage, /tmp, or insufficient space for socket file if transferring data over a network.
-* [Error Code: 1118](https://stackoverflow.com/a/39403564/) - Row size too large (> 8126). Changing some columns to TEXT or BLOB may help. In current row format, BLOB prefix of 0 bytes is stored inline.
 
 ## Installation
 
