@@ -13,13 +13,16 @@ If you use `--network="host"` in your docker run command, then 127.0.0.1 in your
 
 Moving docker for windows to an external drive:
 
-- Right-click docker in system tray and stop
-`sc.exe stop docker`
+- Right-click docker in system tray and stop (equivalent to `sc.exe stop docker`?)
+- Open Windows `services`, scroll to "Docker Desktop Service", right-click and stop (equivalent to `dockerd --unregister-serivce`?)
+- Move the `C:\Program Files\Docker` to external drive
 
+As administrator:
 ```
-cd C:\Program Files\Docker\Docker\resources
-dockerd --unregister-serivce
-dockered --register-service --data-root D:\docker
+cd D:\Docker\Docker\resources
+dockerd --register-service --data-root D:\docker
 
-sc.exe config com.docker.service binPath=D:\Docker\com.docker.service
-I spent a lot of times figuring out errors occurring in this step like
+sc config com.docker.service binPath=D:\Docker\Docker\com.docker.service
+```
+
+After running the `sc config` command, if you right-click Docker Desktop Service in Windows `services` and select properties - you'll see the path to exectable has changed.  You can now right-click Docker Desktop Service and `start`.
