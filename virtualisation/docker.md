@@ -11,7 +11,7 @@ If you use `--network="host"` in your docker run command, then 127.0.0.1 in your
 
 ## Docker for Windows
 
-Docker for Windows isn't design to run from anywhere other than the primary harddrive. I followed some instructions (commented in this page) to try to move, but ultimately it failed. Instead I'm running docker from the commandline in a Hyper-V VM.
+Docker for Windows isn't design to run from anywhere other than the primary harddrive. I followed some instructions (commented in this page) to try to move it, but ultimately it failed. Instead I'm currently running docker from the commandline in a Hyper-V VM.
 
 <!--
 Moving docker for windows to an external drive:
