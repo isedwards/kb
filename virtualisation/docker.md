@@ -26,3 +26,5 @@ sc config com.docker.service binPath=D:\Docker\Docker\com.docker.service
 ```
 
 After running the `sc config` command, if you right-click Docker Desktop Service in Windows `services` and select properties - you'll see the path to exectable has changed.  You can now right-click Docker Desktop Service and `start`.
+
+For managing and working with WSL (including moving to an external drive) I use: https://github.com/DDoSolitary/LxRunOffline
