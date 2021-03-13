@@ -11,6 +11,9 @@ If you use `--network="host"` in your docker run command, then 127.0.0.1 in your
 
 ## Docker for Windows
 
+Docker for Windows isn't design to run from anywhere other than the primary harddrive. I followed some instructions (commented in this page) to try to move, but ultimately it failed. Instead I'm running docker from the commandline in a Hyper-V VM.
+
+<!--
 Moving docker for windows to an external drive:
 
 - Right-click docker in system tray and stop (equivalent to `sc.exe stop docker`?)
@@ -26,5 +29,6 @@ sc config com.docker.service binPath=D:\Docker\Docker\com.docker.service
 ```
 
 After running the `sc config` command, if you right-click Docker Desktop Service in Windows `services` and select properties - you'll see the path to exectable has changed.  You can now right-click Docker Desktop Service and `start`.
+-->
 
-For managing and working with WSL (including moving to an external drive) I use: https://github.com/DDoSolitary/LxRunOffline
+For managing and working with WSL (including moving to an external drive), I use: https://github.com/DDoSolitary/LxRunOffline
