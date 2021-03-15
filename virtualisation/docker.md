@@ -1,3 +1,7 @@
+## Installation on 18.04
+
+- Linking this in case it's useful in the future: [Digital Ocean guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+
 ## Linux
 
 Add the user to the group to allow elevated docker commands without sudo prefix: `sudo gpasswd -a $USER docker`
@@ -11,7 +15,7 @@ If you use `--network="host"` in your docker run command, then 127.0.0.1 in your
 
 ## Docker for Windows
 
-Docker for Windows isn't design to run from anywhere other than the primary harddrive. I followed some instructions (commented in this page) to try to move it, but ultimately it failed. Instead I'm currently running docker from the commandline in a Hyper-V VM.
+Docker for Windows isn't designed to run from anywhere other than the primary hard drive. I followed some instructions (commented in this page) to try to move it, but ultimately it failed. On Windows, I'm currently running docker from the commandline in a Hyper-V VM (not yet ready to try/trust docker in WSL).
 
 <!--
 Moving docker for windows to an external drive:
