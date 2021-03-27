@@ -1,13 +1,4 @@
-# Flask vs Django
-
-- Prefer Django security team
-- Prefer Django `request.user` to flask-login's `current_user` which is randomly available in all templates and can be imported and used at any time
-during the handling to obtain the user object that represents the client of the request. Flask has a `flask.request` object, but flask-login is not integrated.
-- Prefer Django requirements.txt (much shorter...) and more certainty that core dependencies will be maintained
-
-- Prefer Flask/[Werkzug debug](https://werkzeug.palletsprojects.com/en/1.0.x/debug/) (with PIN) and opening an interactive python shell in any 'frame' within the browser traceback
-- SQLAlchemy is more powerful, and prefer Jinja2 due to reuse opportunities on non-Django/Flask projects
-
+- Flask vs Django moved to mind/review/web_frameworks.md
 
 # Environment
 
