@@ -6,7 +6,11 @@ See also: [databases/README.md](https://github.com/isedwards/kb/blob/master/data
 
 ## Linux
 
-Add the user to the group to allow elevated docker commands without sudo prefix: `sudo gpasswd -a $USER docker`
+Add the user to the group to allow elevated docker commands without sudo prefix (the log out and log in again): 
+``
+sudo groupadd docker
+sudo gpasswd -a $USER docker`
+```
 
 Docker creates a bridge named docker0 by default. Both the docker host and the docker containers have an IP address on that bridge, e.g. `docker run --network="bridge"  # (default)`
 
