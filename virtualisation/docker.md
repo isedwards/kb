@@ -1,3 +1,5 @@
+See also: [databases/README.md](https://github.com/isedwards/kb/blob/master/databases/README.md)
+
 ## Installation on 18.04
 
 - Linking this in case it's useful in the future: [Digital Ocean guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) - `docker pull ubuntu:18.04`
