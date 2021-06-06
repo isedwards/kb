@@ -1,5 +1,4 @@
-- **ERROR:** `psycopg2` failing to install with `pip`
-    > Error: pg_config executable not found.
+### Error: pg_config executable not found.
     > 
     > If you prefer to avoid building psycopg2 from source, please install the PyPI 'psycopg2-binary' package instead.
     > For further information please check the 'doc/src/install.rst' file (also at
