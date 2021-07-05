@@ -1,3 +1,13 @@
+## Frequently encountered errors
+
+> Connect to PostgreSQL server: FATAL: no pg_hba.conf entry for host
+
+- Quick solution for local development: Windows c:/program files/postgres/{version}/data/pg_hba.conf: `host all all 0.0.0.0/0 md5`
+
+> ERROR: permission denied to create "pg_catalog.{tablename}" DETAIL: System catalog modifications are currently disallowed.
+
+- Obscure error caused when executing a [local SQL file on a remote system](https://dba.stackexchange.com/a/133630). However, it may be a broader issue related to restoring a script where the schema is not specified and the postgres public schema does not yet exist [aws/blogs/](https://aws.amazon.com/blogs/database/managing-postgresql-users-and-roles/) `#public-schema-and-public-role`
+
 ## Development
 
 [Configure PostgreSQL to allow remote connection](https://blog.bigbinary.com/2016/01/23/configure-postgresql-to-allow-remote-connection.html) (including passwordless connections)
