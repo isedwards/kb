@@ -17,7 +17,7 @@ Convert that into a Python list of strings call `tablespaces` and then do:
   CREATE TABLESPACE {0}
      DATAFILE '{0}.dbf'
      SIZE 1m
-     AUTOEXTEND 20m;
+     AUTOEXTEND ON NEXT 2M MAXSIZE 20M;
   """
 
   for name in tablespaces:
