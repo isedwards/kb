@@ -1,3 +1,7 @@
+## Django manage.py: Migration applied before its dependency
+
+When working on large projects where migrations are created in parallel and then merged, developers often squash the migrations to quickly resolve issues. However, if a branch is using one of the migrations that gets squashed then it cannot be found. If this is just a problem in development then you may be able to delete your local database and start again. Otherwise you're either going to need to [revert the squash or manually fix the migrations table](https://stackoverflow.com/questions/38996599/django-manage-py-migration-applied-before-its-dependency).
+
 ## inspectdb failed with MySQL
 
 **error:**
