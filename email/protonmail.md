@@ -1,0 +1,1 @@
+- Proton mail allows [+aliases](https://protonmail.com/support/knowledge-base/addresses-and-aliases/) (scroll down)
