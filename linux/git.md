@@ -4,6 +4,10 @@ Clean
 =====
 `git clean` will display the files that are removed. If some files are being missed by `git clean -xf` then add the `-d` switch to act on untracted directories, not just files in tracked directories (use `-n` for a `--dry-run`).
 
+Merging histroy of two respositories
+====================================
+[`git merge --allow-unrelated-histories`](https://stackoverflow.com/a/10548919/1624894) ...
+
 Updating .gitignore
 ===================
 After updating .gitignore you may still have files in the repository that should now be ignored.  Fix this by removing and re-adding the files thus:
