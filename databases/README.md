@@ -1,3 +1,6 @@
+> This information below has been replicated at https://github.com/opencdms/opencdms-test-data - consider only maintaining it in one place.
+
+
 For local development, I'm mostly running database servers within docker images using Docker for Windows:
 
 - `docker pull timescale/timescaledb-postgis:latest-pg13` ([overview](https://github.com/timescale/timescaledb-docker))
