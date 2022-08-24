@@ -1,0 +1,1 @@
+- If failing to download messages (reason given is that folder is being processed) then search settings for 'compacting' and turn off
