@@ -11,6 +11,8 @@ Installing docker is a one time pain. Follow docker install instructions...
 echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
+`sudo usermod -aG docker ubuntu` (then log in again)
+
 Although it a lot easer, let's not used the snap package https://askubuntu.com/a/1400162
 
 See also: [databases/README.md](https://github.com/isedwards/kb/blob/master/databases/README.md)
