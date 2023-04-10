@@ -1,8 +1,19 @@
-See also: [databases/README.md](https://github.com/isedwards/kb/blob/master/databases/README.md)
+## Docker installation
 
-## Installation on ubuntu
-- This works: https://docs.docker.com/engine/install/ubuntu/
-- 18.04: Linking this in case it's useful in the future: [Digital Ocean guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) - `docker pull ubuntu:18.04`
+Installing docker is a one time pain. Follow docker install instructions...
+  https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+  * Check that the key file is generated: ls /etc/apt/keyrings/docker.gpg
+   (sometimes it doesn't work if you paste more than one line at a time)
+  * The current instructions for adding the deb package don't work unless line breaks are removed:
+
+```
+echo "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+Although it a lot easer, let's not used the snap package https://askubuntu.com/a/1400162
+
+See also: [databases/README.md](https://github.com/isedwards/kb/blob/master/databases/README.md)
 
 ## Linux
 
