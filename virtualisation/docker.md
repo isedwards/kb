@@ -8,12 +8,29 @@ See also: [databases/README.md](https://github.com/isedwards/kb/blob/master/data
 
 ## Debugging
 
+`docker exec -it <container-name> bash
+
 If you change the container config, you can delete the old version with:
 ```
 docker rmi <image-name> --force
 docker compose build --no-cache <image-name>
 docker compose up <service-name>  # --detach
 ```
+
+## Nuke option
+
+```
+# Stop all running containers
+docker stop $(docker ps -aq)
+# Remove all containers
+docker rm $(docker ps -aq)
+# Delete all images
+docker rmi -f $(docker images -aq)
+# Clear cache and free up disk space (note -af: force all option)
+docker system prune -af
+```
+
+Also see [Uninstalling old docker versions](https://docs.docker.com/engine/install/ubuntu/#uninstall-old-versions).
 
 ## Networking
 
