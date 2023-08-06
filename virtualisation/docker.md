@@ -8,7 +8,7 @@ See also: [databases/README.md](https://github.com/isedwards/kb/blob/master/data
 
 ## Debugging
 
-`docker exec -it <container-name> bash
+`docker exec -it <container-name> bash`
 
 If you change the container config, you can delete the old version with:
 ```
@@ -27,7 +27,13 @@ docker rm $(docker ps -aq)
 # Delete all images
 docker rmi -f $(docker images -aq)
 # Clear cache and free up disk space (note -af: force all option)
+# Warning: this is deleting all local volumes as well
 docker system prune -af
+```
+
+You can also remove all local volumes (are you sure you want to do that?)
+```
+docker volume rm $(docker volume ls -q)
 ```
 
 Also see [Uninstalling old docker versions](https://docs.docker.com/engine/install/ubuntu/#uninstall-old-versions).
