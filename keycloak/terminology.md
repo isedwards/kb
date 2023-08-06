@@ -1,3 +1,10 @@
+|                                | Keycloak   |
+|--------------------------------|------------|
+| Identity Provider (IdP)        | Y          |
+| Policy Information Point (PIP) | Y          |
+| Policy Decision Point (PDP)    | Y          |
+| Policy Enforcement Point (PEP) | N ([happens on client](https://keycloak.discourse.group/t/keycloak-and-opa-integration/44#:~:text=Then%20the%20PEP%20(policy%20enforcement)%20happens%20in%20the%20client%20side))|
+
 ### [Identity provider (IdP)](https://www.nginx.com/blog/validating-oauth-2-0-access-tokens-nginx/#:~:text=identity%20provider%20(IdP))
 
 Validation of the access token is required to ensure that it was indeed issued by a trusted identity provider (IdP) and that it has not expired.
