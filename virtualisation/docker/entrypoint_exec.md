@@ -8,9 +8,6 @@ By using exec, the shell process is replaced by the process you start with exec,
 process will now be the main process in the container (PID 1). As a result, it will receive any signals sent
 to the container directly, allowing for cleaner shutdowns and better signal handling.
 
-For nginx, when you want to gracefully stop it (e.g., to avoid dropping connections), it's essential that it
+E.g. for nginx, when you want to gracefully stop it (e.g., to avoid dropping connections), it's essential that it
 receives the SIGTERM signal correctly. If you don't use exec and simply call nginx directly, the signal will
 go to the shell script, and nginx might not shut down gracefully.
-
-So, while you can certainly run nginx without exec, using exec is recommended in this context for better
-signal handling.
