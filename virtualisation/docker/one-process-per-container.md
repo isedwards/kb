@@ -19,3 +19,8 @@ more predictable.
 
 While it's a best practice, it's not a hard rule. There are valid use cases for multi-process
 containers, especially when processes are closely related and need tight coupling.
+
+Where a simplified architecure is require wrt number of containers we may pursue a 
+"[one function per container](https://devops.stackexchange.com/a/451)" approach with an
+additional process running in the background but all logging and monitoring via the main
+container process.
