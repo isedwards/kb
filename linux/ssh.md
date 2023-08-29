@@ -1,3 +1,5 @@
+Note: depending on the implementation, SSH connections to VM's on a private network on the same machine (e.g. 10.*.*.*) may not drop when the machine sleeps or hibernates.
+
 Separate servers into subdirectories by local/remote and by project with `Include` directives in `~/.ssh/config`, e.g. for a group called `dev`:
 ```
 Include ~/.ssh/dev/config
