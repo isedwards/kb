@@ -1,4 +1,4 @@
-Separate servers by local/remote and by project with `Include` directives in `~/.ssh/config`, e.g.:
+Separate servers into subdirectories by local/remote and by project with `Include` directives in `~/.ssh/config`, e.g. for a group called `dev`:
 ```
 Include ~/.ssh/dev/config
 ```
@@ -11,6 +11,13 @@ Host myproj
     User ubuntu
     Port 22
     IdentityFile ~/.ssh/dev/id_myproj
+```
+
+```
+# When prompted below, write the keys to something like `/User/<username>/.ssh/<group_name>/id_myproj`:
+ssh-keygen
+# Public key is copied to server, the identity file in the config file above should be the private key
+ssh-copy-id -i /path/to/id_custom.pub user@server
 ```
 
 # Setting up ssh among servers
