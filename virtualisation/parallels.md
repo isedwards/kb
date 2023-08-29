@@ -1,6 +1,6 @@
 Dislikes:
 - Ubuntu desktop regularly freezes after laptop sleeps
-- Can't start a machine headless from the UI
+- Can't start a machine headless from the UI [without a pro licence](https://kb.parallels.com/en/123298)
 - Can't shutdown a suspended machine without starting it
 
 
