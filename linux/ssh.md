@@ -1,3 +1,18 @@
+Separate servers by local/remote and by project with `Include` directives in `~/.ssh/config`, e.g.:
+```
+Include ~/.ssh/dev/config
+```
+
+`~/.ssh/dev/config`:
+```
+# VM: `U22.04S4GB - myproj` (Ubuntu 22.04 Server 4Gb memory)
+Host myproj
+    HostName 10.211.55.14
+    User ubuntu
+    Port 22
+    IdentityFile ~/.ssh/dev/id_myproj
+```
+
 # Setting up ssh among servers
 
 - The *primary* server is like your desktop machine normally. It contains the private key and it will initiate the `ssh` commands (the client)
