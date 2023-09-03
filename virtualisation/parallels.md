@@ -1,6 +1,7 @@
 Dislikes:
 - Ubuntu desktop regularly freezes after laptop sleeps
 - Can't start a machine headless from the UI [without a pro licence](https://kb.parallels.com/en/123298)
+- Can't set up port forwarding [without a pro licence](https://kb.parallels.com/en/124718) (which seems really petty given that there are other ways to do it, including, conveniently, in VSCode)
 - Can't shutdown a suspended machine without starting it
 
 
