@@ -1,3 +1,5 @@
+PostgreSQL may have a fairly small [physical memory footprint](https://www.depesz.com/2012/06/09/how-much-ram-is-postgresql-using/)
+
 > This information below has been replicated at https://github.com/opencdms/opencdms-test-data - consider only maintaining it in one place.
 
 
