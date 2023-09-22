@@ -1,0 +1,1 @@
+- [Printable Calendar](https://www.hermetic.ch/cal_sw/pr_cal.php) (via [calendar software](https://www.hermetic.ch/cal_sw.htm))
