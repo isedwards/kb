@@ -8,12 +8,14 @@ See also: [databases/README.md](https://github.com/isedwards/kb/blob/master/data
 
 ## Debugging
 
+If the container won't start then add `command: sleep 3600  # sleep for 1h whilst we debug the container` to the service in `docker-compose.yml`
+
 `docker exec -it <container-name> bash`
 
 If you change the container config, you can delete the old version with:
 ```
-docker rmi <image-name> --force
-docker compose build --no-cache <image-name>
+# docker rmi <image-name> --force
+docker compose build --no-cache <service-name>
 docker compose up <service-name>  # --detach
 ```
 
