@@ -1,3 +1,9 @@
+Currently need a VM with at least 8192 Mb (8 Gb) Memory
+- Network adapter: External switch
+- Check points: Disable `use automatic checkpoints` (running out HDD space causes VM corruption)
+
+---
+
 - Setting up shared folders in Hyper-V is [non-trivial](https://linuxhint.com/shared_folders_hypver-v_ubuntu_guest/) and could open up a security vulnerability on the host machine.
 - Setting up [static MAC address and static IP](https://www.xsofthost.com/help/assign-ip-on-virtual-machines-from-hyper-v-windows-server/)
 
