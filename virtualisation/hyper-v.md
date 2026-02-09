@@ -1,6 +1,6 @@
 Currently need a VM with at least 8192 Mb (8 Gb) Memory
 - Network adapter: External switch
-- Check points: Disable `use automatic checkpoints` (running out HDD space causes VM corruption)
+- Checkpoints: Disable `use automatic checkpoints` (running out HDD space causes VM corruption)
 
 ---
 
